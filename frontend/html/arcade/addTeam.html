@@ -1,48 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <title>gameZone - Add Team</title>
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>gameZone - Add Team</title>
+  </head>
 
-<body>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../shop/shop.html">Shop</a></li>
-      <li><a href="../arcade/arcade.html">Arcade</a></li>
-      <li><a href="../wallet/wallet.html">Wallet</a></li>
-      <li><a href="../profile/profile.html">Profile</a></li>
-    </ul>
-  </nav>
+  <body>
+    <div id="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../shop/shop.html">Shop</a></li>
+        <li><a href="../arcade/arcade.html">Arcade</a></li>
+        <li><a href="../wallet/wallet.html">Wallet</a></li>
+        <li><a href="../profile/profile.html">Profile</a></li>
+      </ul>
+    </div>
 
-  <div>
-    <h1>Add Team</h1>
-  </div>
+    <div>
+      <h1>Add Team</h1>
+    </div>
 
-  <div>
     <div class="container">
-      <h3>Create Your Team</h3>
+      <h2>Create Your Team</h2>
 
       <form action="#" method="post">
-        <p>
-          <label for="name">Team Name:</label>
-          <input type="text" name="name" id="name" />
-        </p>
+        <fieldset>
+          <legend>Team Information</legend>
 
-        <p>
-          <label for="rank">Select your teammates:</label>
-          <select name="players" id="players">
-            <option value="">-- Player1 --</option>
-            <option value="">Player2</option>
-            <option value="">player3</option>
-          </select>
-        </p>
-        <p>
-          <input type="submit" value="Post" class="submit-btn" />
-        </p>
+          <p>
+            <label for="name">Team Name:</label>
+            <input type="text" name="name" id="name" value="" />
+          </p>
+
+          <p>
+            <label for="players">Select your teammates:</label>
+            <select name="players" id="players">
+              <option value="player1">Player1</option>
+              <option value="player2">Player2</option>
+              <option value="player3">Player3</option>
+            </select>
+          </p>
+
+          <p>
+            <input type="submit" value="Post" />
+          </p>
+        </fieldset>
       </form>
     </div>
-  </div>
-</body>
+  </body>
 </html>

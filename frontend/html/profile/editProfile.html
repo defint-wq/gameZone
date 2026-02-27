@@ -1,85 +1,117 @@
-<head>
-  <title>gameZone - Profile</title>
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../shop/shop.html">Shop</a></li>
-      <li><a href="../arcade/arcade.html">Arcade</a></li>
-      <li><a href="../wallet/wallet.html">Wallet</a></li>
-      <li><a href="../profile/profile.html">Profile</a></li>
-    </ul>
-  </nav>
-  <div>
-    <h1>My Profile</h1>
-    <h3>Manage your account information</h3>
-  </div>
-  <a href="profile.html">Edit Profile</a>
-  <form>
-    <div>
-      <p>
-        <label for="firstName">First Name:</label>
-        <input type="text" />
-      </p>
-      <p>
-        <label for="lastName">Last Name:</label>
-        <input type="text" />
-      </p>
-      <p>
-        <label for="email">Email:</label>
-        <input type="text" />
-      </p>
-      <p>
-        <label for="userName">Username:</label>
-        <input type="text" />
-      </p>
-      <p>
-        <label for="bank">Bank Account:</label>
-        <input type="text" />
-      </p>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>gameZone - Profile</title>
+  </head>
+
+  <body>
+    <div id="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../shop/shop.html">Shop</a></li>
+        <li><a href="../arcade/arcade.html">Arcade</a></li>
+        <li><a href="../wallet/wallet.html">Wallet</a></li>
+        <li><a href="../profile/profile.html">Profile</a></li>
+      </ul>
     </div>
-    <button>Submit</button>
-    <button>Cancel</button>
-  </form>
-  <hr />
-  <div>
-    <img src="" alt="profile picture" />
-    <strong>Jordan Storm</strong>
-    <p>@NeonJordan5264</p>
-  </div>
-  <hr />
-  <div>
+
     <div>
-      <strong>First Name</strong>
-      <span>Jordan</span>
+      <h1>My Profile</h1>
+      <h3>Manage your account information</h3>
     </div>
+
     <div>
-      <strong>Last Name</strong>
-      <span>Storm</span>
+      <a href="editProfile.html">Edit Profile</a>
     </div>
-    <div>
-      <strong>Username</strong>
-      <span>NeonJordan5264</span>
-    </div>
-    <div>
-      <strong>Email</strong>
-      <span>neonjordan5264@gmail.com</span>
-    </div>
-    <div>
-      <strong>About</strong>
-      <span>Hello html</span>
-    </div>
-    <div>
-      <strong>Bank Account</strong>
-      <span>1705256189</span>
-    </div>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Edit Profile</legend>
+
+        <p>
+          <label for="firstName">First Name:</label>
+          <input type="text" name="firstName" id="firstName" value="" />
+        </p>
+
+        <p>
+          <label for="lastName">Last Name:</label>
+          <input type="text" name="lastName" id="lastName" value="" />
+        </p>
+
+        <p>
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" value="" />
+        </p>
+
+        <p>
+          <label for="userName">Username:</label>
+          <input type="text" name="userName" id="userName" value="" />
+        </p>
+
+        <p>
+          <label for="bank">Bank Account:</label>
+          <input type="text" name="bank" id="bank" value="" />
+        </p>
+
+        <p>
+          <button type="submit">Submit</button>
+          <button type="reset">Cancel</button>
+        </p>
+      </fieldset>
+    </form>
+
     <hr />
-  </div>
-  <div>
-    <strong>Danger Zone</strong>
-    <p>
-    <a href="deleteAccount.html">Delete Account</a>
-    </p>
-  </div>
-</body>
+
+    <div>
+      <img src="../images/profile.png" alt="profile picture" />
+      <strong>Jordan Storm</strong>
+      <p>@NeonJordan5264</p>
+    </div>
+
+    <hr />
+
+    <div>
+      <div>
+        <strong>First Name</strong>
+        <span>Jordan</span>
+      </div>
+
+      <div>
+        <strong>Last Name</strong>
+        <span>Storm</span>
+      </div>
+
+      <div>
+        <strong>Username</strong>
+        <span>NeonJordan5264</span>
+      </div>
+
+      <div>
+        <strong>Email</strong>
+        <span>neonjordan5264@gmail.com</span>
+      </div>
+
+      <div>
+        <strong>About</strong>
+        <span>Hello html</span>
+      </div>
+
+      <div>
+        <strong>Bank Account</strong>
+        <span>1705256189</span>
+      </div>
+
+      <hr />
+    </div>
+
+    <div>
+      <strong>Danger Zone</strong>
+      <p>
+        <a href="deleteAccount.html">Delete Account</a>
+      </p>
+    </div>
+  </body>
+</html>

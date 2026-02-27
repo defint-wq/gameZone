@@ -1,47 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
   <title>gameZone - Wallet</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
+
 <body>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../shop/shop.html">Shop</a></li>
-      <li><a href="../arcade/arcade.html">Arcade</a></li>
-      <li><a href="../wallet/wallet.html">Wallet</a></li>
-      <li><a href="../profile/profile.html">Profile</a></li>
-    </ul>
-  </nav>
+
+<div id="nav">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../shop/shop.html">Shop</a></li>
+    <li><a href="../arcade/arcade.html">Arcade</a></li>
+    <li><a href="../wallet/wallet.html">Wallet</a></li>
+    <li><a href="../profile/profile.html">Profile</a></li>
+  </ul>
+</div>
+
+<div>
+  <h1>Wallet</h1>
+
   <div>
-    <h1>Wallet</h1>
+    <label>Total Balance:</label>
+    <span>1000 MNT</span>
+
     <div>
-      <label for="balance">Total Balance:</label>
-      1000 MNT
-      <div>
-        <input type="text" placeholder="value" />
-        <button>Recharge Now</button>
-      </div>
-      <div>
-        <input type="text" placeholder="value" />
-        <button>Withdraw</button>
-      </div>
+      <input type="text" name="recharge" value="" />
+      <button type="button">Recharge Now</button>
     </div>
-    <hr />
+
     <div>
-      <strong>Transaction History</strong>
-      <table>
-        <tr>
-          <th>Value</th>
-          <th>Type</th>
-          <th>Date</th>
-          <th>Total</th>
-        </tr>
-        <tr>
-          <td>10000</td>
-          <td>Card</td>
-          <td>2026.02.14</td>
-          <td>24700</td>
-        </tr>
-      </table>
+      <input type="text" name="withdraw" value="" />
+      <button type="button">Withdraw</button>
     </div>
   </div>
+
+  <hr />
+
+  <div>
+    <strong>Transaction History</strong>
+
+    <table border="1">
+      <tr>
+        <th>Value</th>
+        <th>Type</th>
+        <th>Date</th>
+        <th>Total</th>
+      </tr>
+
+      <tr>
+        <td>10000</td>
+        <td>Card</td>
+        <td>2026.02.14</td>
+        <td>24700</td>
+      </tr>
+    </table>
+
+  </div>
+
+</div>
+
 </body>
+</html>

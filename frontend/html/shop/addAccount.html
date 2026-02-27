@@ -1,129 +1,152 @@
-<head>
-  <title>gameZone - Add Account</title>
-</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>gameZone - Add Account</title>
+  </head>
 
-<body>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../shop/shop.html">Shop</a></li>
-      <li><a href="../arcade/arcade.html">Arcade</a></li>
-      <li><a href="../wallet/wallet.html">Wallet</a></li>
-      <li><a href="../profile/profile.html">Profile</a></li>
-    </ul>
-  </nav>
+  <body>
+    <div id="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../shop/shop.html">Shop</a></li>
+        <li><a href="../arcade/arcade.html">Arcade</a></li>
+        <li><a href="../wallet/wallet.html">Wallet</a></li>
+        <li><a href="../profile/profile.html">Profile</a></li>
+      </ul>
+    </div>
 
-  <div>
-    <h1>Account Marketplace</h1>
-  </div>
+    <div>
+      <h1>Account Marketplace</h1>
+    </div>
 
-  <div class="add-account-link">
-    <a href="shop.html">Add Account</a>
-  </div>
-  <div>
+    <div class="add-account-link">
+      <a href="shop.html">Add Account</a>
+    </div>
+
     <div class="container">
-      <h3>Add Your Account</h3>
+      <h2>Add Your Account</h2>
 
       <form action="#" method="post">
-        <p>
-          <label for="name">Account Name:</label>
-          <input type="text" name="name" id="name" />
-        </p>
+        <fieldset>
+          <legend>Account Info</legend>
 
-        <p>
-          <label for="rank">Rank:</label>
-          <select name="rank" id="rank">
-            <option value="">-- Select Rank --</option>
-            <option value="mythic">Mythic</option>
-            <option value="legend">Legend</option>
-            <option value="epic">Epic</option>
-          </select>
-        </p>
+          <p>
+            <label for="name">Account Name:</label>
+            <input type="text" name="name" id="name" value="" />
+          </p>
 
-        <p>
-          <label for="skins">Number of Skins:</label>
-          <input type="text" name="skins" id="skins" />
-        </p>
+          <p>
+            <label for="rank">Rank:</label>
+            <select name="rank" id="rank">
+              <option value="">-- Select Rank --</option>
+              <option value="mythic">Mythic</option>
+              <option value="legend">Legend</option>
+              <option value="epic">Epic</option>
+            </select>
+          </p>
 
-        <p>
-          <label for="winrate">Win Rate (%):</label>
-          <input type="text" name="winrate" id="winrate" />
-        </p>
+          <p>
+            <label for="skins">Number of Skins:</label>
+            <input type="text" name="skins" id="skins" value="" />
+          </p>
 
-        <p>
-          <label for="price">Price ($):</label>
-          <input type="text" name="price" id="price" />
-        </p>
+          <p>
+            <label for="winrate">Win Rate (%):</label>
+            <input type="text" name="winrate" id="winrate" value="" />
+          </p>
 
-        <p>
-          <input type="submit" value="Post" class="submit-btn" />
-        </p>
+          <p>
+            <label for="price">Price ($):</label>
+            <input type="text" name="price" id="price" value="" />
+          </p>
+
+          <p>
+            <input type="submit" value="Post" class="submit-btn" />
+          </p>
+        </fieldset>
       </form>
     </div>
-  </div>
-
-  <a href="filterAccount.html">Filter</a>
-  <div>
-    <h2>Featured Accounts</h2>
 
     <div>
-      <h3>Mega Collector</h3>
-      <p><strong>Rank:</strong> Mythic</p>
-      <p><strong>Skins:</strong> 120+</p>
-      <p><strong>Win Rate:</strong> 65%</p>
-      <p><strong>Price:</strong> $150</p>
-      <p><strong>Seller:</strong> ProPlayer99</p>
-      <a href="#">View Details</a>
-
-      <h3>Reviews</h3>
-      <div id="reviews1"></div>
-
-      <h4>Leave a Review</h4>
-      <form>
-        <input
-          type="text"
-          name="rating"
-          placeholder="Rating (1-5)"
-        /><br /><br />
-        <input
-          type="text"
-          name="comment"
-          placeholder="Write your comment"
-        /><br /><br />
-        <input type="submit" value="Submit Review" />
-      </form>
+      <a href="filterAccount.html">Filter</a>
     </div>
-
-    <hr />
 
     <div>
-      <h3>World Collector</h3>
-      <p><strong>Rank:</strong> Legend I</p>
-      <p><strong>Skins:</strong> 80+</p>
-      <p><strong>Win Rate:</strong> 58%</p>
-      <p><strong>Price:</strong> $90</p>
-      <p><strong>Seller:</strong> GamingKing</p>
-      <a href="#">View Details</a>
+      <h2>Featured Accounts</h2>
 
-      <h3>Reviews</h3>
-      <div id="reviews1"></div>
+      <div>
+        <h3>Mega Collector</h3>
+        <p><strong>Rank:</strong> Mythic</p>
+        <p><strong>Skins:</strong> 120+</p>
+        <p><strong>Win Rate:</strong> 65%</p>
+        <p><strong>Price:</strong> $150</p>
+        <p><strong>Seller:</strong> ProPlayer99</p>
+        <p><a href="#">View Details</a></p>
 
-      <h4>Leave a Review</h4>
-      <form>
-        <input
-          type="text"
-          name="rating"
-          placeholder="Rating (1-5)"
-        /><br /><br />
-        <input
-          type="text"
-          name="comment"
-          placeholder="Write your comment"
-        /><br /><br />
-        <input type="submit" value="Submit Review" />
-      </form>
+        <h3>Reviews</h3>
+        <div id="reviews1"></div>
+
+        <h4>Leave a Review</h4>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Review</legend>
+
+            <p>
+              <label for="rating1">Rating (1-5):</label>
+              <input type="text" name="rating" id="rating1" value="" />
+            </p>
+
+            <p>
+              <label for="comment1">Comment:</label>
+              <input type="text" name="comment" id="comment1" value="" />
+            </p>
+
+            <p>
+              <input type="submit" value="Submit Review" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+
+      <hr />
+
+      <div>
+        <h3>World Collector</h3>
+        <p><strong>Rank:</strong> Legend I</p>
+        <p><strong>Skins:</strong> 80+</p>
+        <p><strong>Win Rate:</strong> 58%</p>
+        <p><strong>Price:</strong> $90</p>
+        <p><strong>Seller:</strong> GamingKing</p>
+        <p><a href="#">View Details</a></p>
+
+        <h3>Reviews</h3>
+        <div id="reviews2"></div>
+
+        <h4>Leave a Review</h4>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Review</legend>
+
+            <p>
+              <label for="rating2">Rating (1-5):</label>
+              <input type="text" name="rating" id="rating2" value="" />
+            </p>
+
+            <p>
+              <label for="comment2">Comment:</label>
+              <input type="text" name="comment" id="comment2" value="" />
+            </p>
+
+            <p>
+              <input type="submit" value="Submit Review" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+
+      <hr />
     </div>
-
-    <hr />
-  </div>
-</body>
+  </body>
+</html>
