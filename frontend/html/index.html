@@ -1,45 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHMTL 1.0 Strict//EN">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <title>gameZone</title>
   </head>
+
   <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="shop/shop.html">Shop</a></li>
-      <li><a href="arcade/arcade.html">Arcade</a></li>
-      <li><a href="wallet/wallet.html">Wallet</a></li>
-      <li><a href="profile/profile.html">Profile</a></li>
-      <li><a href="admin/admin.html">Admin</a></li>
-    </ul>
-  </nav>
+    <div id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop/shop.html">Shop</a></li>
+        <li><a href="arcade/arcade.html">Arcade</a></li>
+        <li><a href="wallet/wallet.html">Wallet</a></li>
+        <li><a href="profile/profile.html">Profile</a></li>
+        <li><a href="admin/admin.html">Admin</a></li>
+      </ul>
+    </div>
 
     <div>
       <h1>Home</h1>
 
-
-      <a href="auth/signin.html">
-        <button type="submit">Sign In</button>
-      </a>
+      <form action="auth/signin.html" method="get">
+        <div>
+          <button type="submit">Sign In</button>
+        </div>
+      </form>
 
       <div>
         <h3>News</h3>
+
         <fieldset>
-        <img src="#" alt="#">
-        <div>
-          Tournament
-        </div>
-        <div>
-          <strong>Hello News</strong>
-          <p>info</p>
-        </div>
-        <div>
-          <p>date</p>
-          <a href="home/news.html">Read More</a>
+          <legend>Latest News</legend>
+
+          <div>
+            <img src="images/news1.jpg" alt="Tournament news" />
+          </div>
+
+          <div>Tournament</div>
+
+          <div>
+            <strong>Hello News</strong>
+            <p>info</p>
+          </div>
+
+          <div>
+            <p>date</p>
+            <a href="home/news.html">Read More</a>
+          </div>
         </fieldset>
-        </div>
       </div>
     </div>
   </body>
