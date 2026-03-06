@@ -19,9 +19,7 @@
           >Arcade</a
         >
 
-        <a class="btn deco font-white" href="../wallet/wallet.html"
-          >Wallet</a
-        >
+        <a class="btn deco font-white" href="../wallet/wallet.html">Wallet</a>
 
         <a class="btn-ghost deco font-white" href="../profile/profile.html"
           >Profile</a
@@ -35,36 +33,47 @@
       <div>
         <label>Total Balance:</label>
         <span>1000 MNT</span>
-
+        <p></p>
         <div>
-          <input type="text" name="recharge" value="" />
-          <button type="button">Recharge Now</button>
+          <input class="input-field" type="text" name="recharge" value="" />
+          <button class="submit-btn" type="button">Recharge Now</button>
         </div>
-
+        <br />
         <div>
-          <input type="text" name="withdraw" value="" />
-          <button type="button">Withdraw</button>
+          <input class="input-field" type="text" />
+          <input class="submit-btn" type="submit" value="Withdraw" />
         </div>
       </div>
 
       <hr />
 
-      <div>
-        <strong>Transaction History</strong>
+      <div class="wallet-section">
+        <h2 class="wallet-title">Transaction History</h2>
 
-        <table border="1">
+        <table class="wallet-table">
           <tr>
             <th>Value</th>
             <th>Type</th>
             <th>Date</th>
             <th>Total</th>
           </tr>
-
           <tr>
             <td>10000</td>
             <td>Card</td>
             <td>2026.02.14</td>
             <td>24700</td>
+          </tr>
+          <tr>
+            <td>5000</td>
+            <td>Bank</td>
+            <td>2026.02.20</td>
+            <td>29700</td>
+          </tr>
+          <tr>
+            <td>8000</td>
+            <td>Card</td>
+            <td>2026.03.01</td>
+            <td>37700</td>
           </tr>
         </table>
       </div>
