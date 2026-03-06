@@ -1,0 +1,71 @@
+.bgcolor-darkblue {
+  background: #050814;
+}
+
+.bgcolor-nav {
+  background: #0a0f1e;
+}
+
+.bg-nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.font-smoke {
+  color: #8b95b8;
+}
+
+.font-white {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.deco { 
+  text-decoration: none;
+}
+
+.kk {
+  display: flex;
+  flex-wrap: wrap; /* элементүүдийг баганаар байрлуулна */
+  gap: 20px; /* блок хооронд зай */
+}
+
+.btn,
+.btn-ghost {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  width: 207px;
+  height: 48px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.1s;
+  border: 2px;
+  border-color: #9333ea;
+}
+
+.btn {
+  background: linear-gradient(#5b68f5, #9333ea);
+}
+
+.btn-ghost {
+  background: transparent;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-ghost:active {
+  background: linear-gradient(#5b68f5, #9333ea);
+}
