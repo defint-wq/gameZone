@@ -29,18 +29,25 @@
     </div>
 
     <div class="add-account-link">
-      <a href="addAccount.html">Add Account</a>
+      <a class="btn-ghost deco font-white" href="addAccount.html"
+        >Add Account</a
+      >
     </div>
 
     <div>
-      <a href="filterAccount.html">Filter</a>
+      <a class="btn-ghost deco font-white" href="filterAccount.html">Filter</a>
     </div>
 
     <div>
       <h2>Featured Accounts</h2>
 
-      <div>
+      <div class="account-card">
         <h3>Mega Collector</h3>
+        <img
+          class="account-image"
+          src="../../images/account1.jpg"
+          alt="Mega Collector account"
+        />
         <p><strong>Rank:</strong> Mythic</p>
         <p><strong>Skins:</strong> 120+</p>
         <p><strong>Win Rate:</strong> 65%</p>
@@ -52,15 +59,27 @@
         <div id="reviews1"></div>
 
         <h4>Leave a Review</h4>
-        <form action="#" method="post">
+        <form class="review-form" action="#" method="post">
           <div>
-            <input type="text" name="rating" value="" />
+            <input
+              class="input-field"
+              type="number"
+              name="rating"
+              min="1"
+              max="5"
+              placeholder="Rating 1-5"
+            />
           </div>
           <div>
-            <input type="text" name="comment" value="" />
+            <input
+              class="input-field"
+              type="text"
+              name="comment"
+              placeholder="Add comment"
+            />
           </div>
           <div>
-            <input type="submit" value="Submit Review" />
+            <input class="submit-btn" type="submit" value="Submit Review" />
           </div>
         </form>
       </div>
@@ -80,15 +99,27 @@
         <div id="reviews2"></div>
 
         <h4>Leave a Review</h4>
-        <form action="#" method="post">
+        <form class="review-form" action="#" method="post">
           <div>
-            <input type="text" name="rating" value="" />
+            <input
+              class="input-field"
+              type="number"
+              name="rating"
+              min="1"
+              max="5"
+              placeholder="Rating 1-5"
+            />
           </div>
           <div>
-            <input type="text" name="comment" value="" />
+            <input
+              class="input-field"
+              type="text"
+              name="comment"
+              placeholder="Add comment"
+            />
           </div>
           <div>
-            <input type="submit" value="Submit Review" />
+            <input class="submit-btn" type="submit" value="Submit Review" />
           </div>
         </form>
       </div>

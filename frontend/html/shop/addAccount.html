@@ -29,44 +29,46 @@
     </div>
 
     <div class="add-account-link">
-      <a href="shop.html">Add Account</a>
+      <a class="btn-ghost deco font-white" href="shop.html">Add Account</a>
     </div>
 
     <div class="container">
       <h2>Add Your Account</h2>
 
-      <form action="#" method="post">
+      <form action="#" method="post" enctype="multipart/form-data">
         <fieldset>
           <legend>Account Info</legend>
 
           <p>
             <label for="name">Account Name:</label>
-            <input type="text" name="name" id="name" value="" />
-          </p>
+            <input class="input-field" type="text" name="name" id="name" placeholder="Add Name" />
 
-          <p>
-            <label for="rank">Rank:</label>
-            <select name="rank" id="rank">
-              <option value="">-- Select Rank --</option>
-              <option value="mythic">Mythic</option>
-              <option value="legend">Legend</option>
-              <option value="epic">Epic</option>
-            </select>
           </p>
 
           <p>
             <label for="skins">Number of Skins:</label>
-            <input type="text" name="skins" id="skins" value="" />
+            <input class="input-field" type="number" name="skins" id="skins" placeholder="Select Number of Skin" />
           </p>
 
           <p>
             <label for="winrate">Win Rate (%):</label>
-            <input type="text" name="winrate" id="winrate" value="" />
+            <input class="input-field" type="text" name="winrate" />
           </p>
 
           <p>
             <label for="price">Price ($):</label>
-            <input type="text" name="price" id="price" value="" />
+            <input class="input-field" type="text" name="price" />
+          </p>
+
+          <p>
+            <label for="image">Account Image:</label>
+            <input
+              class="input-field-file"
+              type="file"
+              name="image"
+              id="image"
+              accept="image/*"
+            />
           </p>
 
           <p>
@@ -75,85 +77,6 @@
         </fieldset>
       </form>
     </div>
-
-    <div>
-      <a href="filterAccount.html">Filter</a>
-    </div>
-
-    <div>
-      <h2>Featured Accounts</h2>
-
-      <div>
-        <h3>Mega Collector</h3>
-        <p><strong>Rank:</strong> Mythic</p>
-        <p><strong>Skins:</strong> 120+</p>
-        <p><strong>Win Rate:</strong> 65%</p>
-        <p><strong>Price:</strong> $150</p>
-        <p><strong>Seller:</strong> ProPlayer99</p>
-        <p><a href="#">View Details</a></p>
-
-        <h3>Reviews</h3>
-        <div id="reviews1"></div>
-
-        <h4>Leave a Review</h4>
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Review</legend>
-
-            <p>
-              <label for="rating1">Rating (1-5):</label>
-              <input type="text" name="rating" id="rating1" value="" />
-            </p>
-
-            <p>
-              <label for="comment1">Comment:</label>
-              <input type="text" name="comment" id="comment1" value="" />
-            </p>
-
-            <p>
-              <input type="submit" value="Submit Review" />
-            </p>
-          </fieldset>
-        </form>
-      </div>
-
-      <hr />
-
-      <div>
-        <h3>World Collector</h3>
-        <p><strong>Rank:</strong> Legend I</p>
-        <p><strong>Skins:</strong> 80+</p>
-        <p><strong>Win Rate:</strong> 58%</p>
-        <p><strong>Price:</strong> $90</p>
-        <p><strong>Seller:</strong> GamingKing</p>
-        <p><a href="#">View Details</a></p>
-
-        <h3>Reviews</h3>
-        <div id="reviews2"></div>
-
-        <h4>Leave a Review</h4>
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Review</legend>
-
-            <p>
-              <label for="rating2">Rating (1-5):</label>
-              <input type="text" name="rating" id="rating2" value="" />
-            </p>
-
-            <p>
-              <label for="comment2">Comment:</label>
-              <input type="text" name="comment" id="comment2" value="" />
-            </p>
-
-            <p>
-              <input type="submit" value="Submit Review" />
-            </p>
-          </fieldset>
-        </form>
-      </div>
-
-      <hr />
     </div>
   </body>
 </html>
