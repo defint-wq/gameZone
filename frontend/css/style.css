@@ -29,6 +29,10 @@
   font-size: 16px;
 }
 
+.font-size-20 {
+    font-size: 20px;
+}
+
 .deco {
   text-decoration: none;
 }
@@ -37,6 +41,11 @@
   display: flex;
   flex-wrap: wrap; /* элементүүдийг баганаар байрлуулна */
   gap: 20px; /* блок хооронд зай */
+}
+
+.hh {
+    display: flex;
+    flex-direction: column;
 }
 
 .btn,
