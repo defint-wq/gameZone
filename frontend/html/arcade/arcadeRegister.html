@@ -12,9 +12,7 @@
       <ul class="kk">
         <a class="btn-ghost deco font-white" href="../index.html">Home</a>
         <a class="btn-ghost deco font-white" href="../shop/shop.html">Shop</a>
-        <a class="btn deco font-white" href="../arcade/arcade.html"
-          >Arcade</a
-        >
+        <a class="btn deco font-white" href="../arcade/arcade.html">Arcade</a>
         <a class="btn-ghost deco font-white" href="../wallet/wallet.html"
           >Wallet</a
         >
@@ -34,17 +32,17 @@
 
       <div>
         <p><strong>Register</strong></p>
-        <p><a href="arcade.html">Return</a></p>
+        <p><a class="submit-btn deco" href="arcade.html">Return</a></p>
 
         <p><strong>Choose your teammates</strong></p>
 
         <form action="#" method="post">
-          <fieldset>
+          <fieldset class="account-card">
             <legend>Team Registration</legend>
 
             <p>
               <label for="team">Teammates:</label>
-              <select multiple="multiple" name="team" id="team">
+              <select type="select" name="team" id="team">
                 <option value="1">Bat (Legend)</option>
                 <option value="2">Bolor (Legend)</option>
                 <option value="3">Bat2 (Legend)</option>
@@ -55,7 +53,10 @@
               </select>
             </p>
 
-            <p><strong>Input your bet value</strong></p>
+            <p>
+              <label for="bet">Input your bet value</label>
+              <input class="input-field" type="text" name="bet" />
+            </p>
 
             <p>
               <strong>Total Balance:</strong>
@@ -64,23 +65,23 @@
 
             <p>
               <label for="rechargeValue">Recharge value:</label>
+              <input class="input-field" type="text" name="rechargeValue" />
               <input
-                type="text"
-                name="rechargeValue"
-                id="rechargeValue"
-                value=""
+                class="submit-btn"
+                type="submit"
+                name="recharge"
+                value="Recharge"
               />
-              <input type="submit" name="recharge" value="Recharge" />
             </p>
 
             <p>
-              <label for="betValue">Bet value:</label>
-              <input type="text" name="betValue" id="betValue" value="" />
+              <label for="bet">Bet Value</label>
+              <input class="input-field" type="text" name="bet value" />
             </p>
 
-            <p>
-              <input type="submit" value="Submit" />
-              <input type="reset" value="Cancel" />
+            <p class="kk">
+              <input class="submit-btn" type="submit" value="Create" />
+              <input class="btn-ghost font-white" type="reset" value="Reset" />
             </p>
           </fieldset>
         </form>

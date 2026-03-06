@@ -35,11 +35,39 @@
     </div>
 
     <div>
-      <a class="btn-ghost deco font-white" href="filterAccount.html">Filter</a>
-    </div>
-
-    <div>
       <h2>Featured Accounts</h2>
+      <h2>Filter</h2>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Account Filter</legend>
+
+          <p>
+            <label for="minprice">Min Price:</label>
+            <input
+              class="input-field"
+              type="text"
+              name="minprice"
+              id="minprice"
+            />
+          </p>
+
+          <p>
+            <label for="maxprice">Max Price:</label>
+            <input
+              class="input-field"
+              type="text"
+              name="maxprice"
+              id="maxprice"
+            />
+          </p>
+
+          <p class="kk">
+            <input class="submit-btn" type="submit" value="Apply Filter" />
+            <input class="btn-ghost font-white" type="reset" value="Reset" />
+          </p>
+        </fieldset>
+      </form>
 
       <div class="account-card">
         <h3>Mega Collector</h3>
