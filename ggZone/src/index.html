@@ -58,9 +58,13 @@
           </a>
         </li>
         <li>
-          <a href="#news" class="nav-item nav-item-inactive" data-page="news">
-            <span class="nav-icon">📰</span>
-            <span class="nav-label">News</span>
+          <a
+            href="#wallet"
+            class="nav-item nav-item-inactive"
+            data-page="wallet"
+          >
+            <span class="nav-icon">$</span>
+            <span class="nav-label">Wallet</span>
           </a>
         </li>
         <li>
@@ -202,46 +206,100 @@
               </p>
             </div>
           </div>
+        </div>
+        <div class="page-container">
+          <h1 class="page-title">Latest News & Updates</h1>
 
-          <!-- Quick Actions -->
-          <div class="section-container">
-            <h2 class="section-header">Quick Actions</h2>
-            <div class="quick-actions">
-              <button class="card-action" onclick="navigateTo('profile')">
-                <div class="action-icon">👤</div>
-                <div>
-                  <h3>View Profile</h3>
-                  <p>Check your stats and achievements</p>
-                </div>
-              </button>
+          <div class="news-grid">
+            <article class="news-card card-interactive">
+              <div
+                class="news-image"
+                style="
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                  height: 200px;
+                  border-radius: 12px;
+                  margin-bottom: 16px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 48px;
+                "
+              >
+                🏆
+              </div>
+              <span class="badge-info">Tournament</span>
+              <h3>Grand Championship Announced</h3>
+              <p class="news-excerpt">
+                The official MLBB Grand Championship will begin next month with
+                top teams from different regions competing for a $500K prize
+                pool.
+              </p>
+              <div class="news-meta">
+                <span class="news-date">📅 March 6, 2026</span>
+                <span class="news-author">👤 Admin</span>
+              </div>
+              <button class="btn-primary full-width">Read More</button>
+            </article>
 
-              <button class="card-action" onclick="navigateTo('shop')">
-                <div class="action-icon">🛒</div>
-                <div>
-                  <h3>Browse Marketplace</h3>
-                  <p>Find the best accounts and deals</p>
-                </div>
-              </button>
+            <article class="news-card card-interactive">
+              <div
+                class="news-image"
+                style="
+                  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                  height: 200px;
+                  border-radius: 12px;
+                  margin-bottom: 16px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 48px;
+                "
+              >
+                💎
+              </div>
+              <span class="badge-warning">Update</span>
+              <h3>New Collector Skins Released</h3>
+              <p class="news-excerpt">
+                Several new collector skins have been added to the game, giving
+                players more premium customization options for their favorite
+                heroes.
+              </p>
+              <div class="news-meta">
+                <span class="news-date">📅 March 5, 2026</span>
+                <span class="news-author">👤 Admin</span>
+              </div>
+              <button class="btn-primary full-width">Read More</button>
+            </article>
 
-              <button class="card-action" onclick="navigateTo('teams')">
-                <div class="action-icon">👥</div>
-                <div>
-                  <h3>Join a Team</h3>
-                  <p>Connect with other players</p>
-                </div>
-              </button>
-            </div>
-          </div>
-
-          <!-- Call to Action -->
-          <div class="cta-section">
-            <div class="cta-content">
-              <h2>Ready to Become a Legend?</h2>
-              <p>Join the battlefield and show the world your skills!</p>
-              <button class="btn-primary btn-large" onclick="showAuthModal()">
-                Get Started Now →
-              </button>
-            </div>
+            <article class="news-card card-interactive">
+              <div
+                class="news-image"
+                style="
+                  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                  height: 200px;
+                  border-radius: 12px;
+                  margin-bottom: 16px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 48px;
+                "
+              >
+                ⚔️
+              </div>
+              <span class="badge-success">Esports</span>
+              <h3>Top Team Wins Spring Cup</h3>
+              <p class="news-excerpt">
+                The Spring Cup ended with a thrilling final match, where Team
+                Alpha secured victory in game five with an incredible comeback
+                performance.
+              </p>
+              <div class="news-meta">
+                <span class="news-date">📅 March 4, 2026</span>
+                <span class="news-author">👤 Admin</span>
+              </div>
+              <button class="btn-primary full-width">Read More</button>
+            </article>
           </div>
         </div>
       </section>
@@ -394,37 +452,11 @@
               🎮 Live Matches
             </button>
             <button class="tab-btn" data-tab="betting">💰 Match Betting</button>
-            <button class="tab-btn" data-tab="wallet">💳 Wallet</button>
           </div>
 
           <!-- Live Matches Tab -->
           <div class="tab-content active" id="matches">
             <div class="matches-grid">
-              <div class="match-card card-glass">
-                <div class="match-header">
-                  <span class="badge-live">🔴 LIVE</span>
-                  <span class="match-time">Game 3 - 15:24</span>
-                </div>
-                <div class="match-teams">
-                  <div class="team">
-                    <div class="team-logo">🛡️</div>
-                    <div class="team-name">Team Alpha</div>
-                    <div class="team-score">2</div>
-                  </div>
-                  <div class="vs">VS</div>
-                  <div class="team">
-                    <div class="team-score">1</div>
-                    <div class="team-name">Team Omega</div>
-                    <div class="team-logo">⚔️</div>
-                  </div>
-                </div>
-                <div class="match-info">
-                  <span>🏆 Spring Championship</span>
-                  <span>👥 12.5K watching</span>
-                </div>
-                <button class="btn-primary full-width">Watch Now</button>
-              </div>
-
               <div class="match-card card">
                 <div class="match-header">
                   <span class="badge-warning">Upcoming</span>
@@ -472,59 +504,6 @@
                     <span>Amount: $25</span>
                     <span class="badge-success">Won +$45</span>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Wallet Tab -->
-          <div class="tab-content" id="wallet">
-            <div class="wallet-card card">
-              <h3>💰 My Wallet</h3>
-              <div class="balance-display">
-                <div class="balance-label">Available Balance</div>
-                <div class="balance-amount text-gradient-primary">
-                  $1,250.00
-                </div>
-              </div>
-              <div class="wallet-actions">
-                <button class="btn-primary">💳 Recharge</button>
-                <button class="btn-secondary">💸 Withdraw</button>
-              </div>
-            </div>
-
-            <div class="card">
-              <h3>Recent Transactions</h3>
-              <div class="transactions-list">
-                <div class="transaction-item">
-                  <div
-                    class="transaction-icon icon-container-sm"
-                    style="
-                      background: linear-gradient(to right, #10b981, #14b8a6);
-                    "
-                  >
-                    💳
-                  </div>
-                  <div class="transaction-details">
-                    <div class="transaction-name">Wallet Recharge</div>
-                    <div class="transaction-date">2026-03-10</div>
-                  </div>
-                  <div class="transaction-amount positive">+$100.00</div>
-                </div>
-                <div class="transaction-item">
-                  <div
-                    class="transaction-icon icon-container-sm"
-                    style="
-                      background: linear-gradient(to right, #f97316, #ef4444);
-                    "
-                  >
-                    💰
-                  </div>
-                  <div class="transaction-details">
-                    <div class="transaction-name">Bet Placed</div>
-                    <div class="transaction-date">2026-03-09</div>
-                  </div>
-                  <div class="transaction-amount negative">-$50.00</div>
                 </div>
               </div>
             </div>
@@ -591,105 +570,58 @@
         </div>
       </section>
 
-      <!-- News Page -->
-      <section id="news" class="page">
+      <section id="wallet" class="page">
         <div class="page-container">
-          <h1 class="page-title">Latest News & Updates</h1>
+          <div class="wallet-card card">
+            <h3>💰 My Wallet</h3>
+            <div class="balance-display">
+              <div class="balance-label">Available Balance</div>
+              <div class="balance-amount text-gradient-primary">$1,250.00</div>
+            </div>
+            <div class="wallet-actions">
+              <button class="btn-primary">💳 Recharge</button>
+              <button class="btn-secondary">💸 Withdraw</button>
+            </div>
+          </div>
 
-          <div class="news-grid">
-            <article class="news-card card-interactive">
-              <div
-                class="news-image"
-                style="
-                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                  height: 200px;
-                  border-radius: 12px;
-                  margin-bottom: 16px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-size: 48px;
-                "
-              >
-                🏆
+          <div class="card">
+            <h3>Recent Transactions</h3>
+            <div class="transactions-list">
+              <div class="transaction-item">
+                <div
+                  class="transaction-icon icon-container-sm"
+                  style="
+                    background: linear-gradient(to right, #10b981, #14b8a6);
+                  "
+                >
+                  💳
+                </div>
+                <div class="transaction-details">
+                  <div class="transaction-name">Wallet Recharge</div>
+                  <div class="transaction-date">2026-03-10</div>
+                </div>
+                <div class="transaction-amount positive">+$100.00</div>
               </div>
-              <span class="badge-info">Tournament</span>
-              <h3>Grand Championship Announced</h3>
-              <p class="news-excerpt">
-                The official MLBB Grand Championship will begin next month with
-                top teams from different regions competing for a $500K prize
-                pool.
-              </p>
-              <div class="news-meta">
-                <span class="news-date">📅 March 6, 2026</span>
-                <span class="news-author">👤 Admin</span>
-              </div>
-              <button class="btn-primary full-width">Read More</button>
-            </article>
 
-            <article class="news-card card-interactive">
-              <div
-                class="news-image"
-                style="
-                  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-                  height: 200px;
-                  border-radius: 12px;
-                  margin-bottom: 16px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-size: 48px;
-                "
-              >
-                💎
+              <div class="transaction-item">
+                <div
+                  class="transaction-icon icon-container-sm"
+                  style="
+                    background: linear-gradient(to right, #f97316, #ef4444);
+                  "
+                >
+                  💰
+                </div>
+                <div class="transaction-details">
+                  <div class="transaction-name">Bet Placed</div>
+                  <div class="transaction-date">2026-03-09</div>
+                </div>
+                <div class="transaction-amount negative">-$50.00</div>
               </div>
-              <span class="badge-warning">Update</span>
-              <h3>New Collector Skins Released</h3>
-              <p class="news-excerpt">
-                Several new collector skins have been added to the game, giving
-                players more premium customization options for their favorite
-                heroes.
-              </p>
-              <div class="news-meta">
-                <span class="news-date">📅 March 5, 2026</span>
-                <span class="news-author">👤 Admin</span>
-              </div>
-              <button class="btn-primary full-width">Read More</button>
-            </article>
-
-            <article class="news-card card-interactive">
-              <div
-                class="news-image"
-                style="
-                  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-                  height: 200px;
-                  border-radius: 12px;
-                  margin-bottom: 16px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-size: 48px;
-                "
-              >
-                ⚔️
-              </div>
-              <span class="badge-success">Esports</span>
-              <h3>Top Team Wins Spring Cup</h3>
-              <p class="news-excerpt">
-                The Spring Cup ended with a thrilling final match, where Team
-                Alpha secured victory in game five with an incredible comeback
-                performance.
-              </p>
-              <div class="news-meta">
-                <span class="news-date">📅 March 4, 2026</span>
-                <span class="news-author">👤 Admin</span>
-              </div>
-              <button class="btn-primary full-width">Read More</button>
-            </article>
+            </div>
           </div>
         </div>
       </section>
-
       <!-- Admin Panel Page -->
       <section id="admin" class="page">
         <div class="page-container">
