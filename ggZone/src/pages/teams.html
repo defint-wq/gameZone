@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameZone – Teams</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-container">
+          <div class="logo-icon">⚔️</div>
+          <h1 class="logo-text">gameZone</h1>
+        </div>
+      </div>
+
+      <ul class="div-menu">
+        <li>
+          <a href="../index.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="profile.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">👤</span>
+            <span class="nav-label">Profile</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="shop.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">🛒</span>
+            <span class="nav-label">Shop</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="arcade.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">🎮</span>
+            <span class="nav-label">Arcade</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="teams.html" class="nav-item nav-item-active">
+            <span class="nav-icon">👥</span>
+            <span class="nav-label">Teams</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="wallet.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">$</span>
+            <span class="nav-label">Wallet</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="admin.html" class="nav-item nav-item-inactive admin-item">
+            <span class="nav-icon">⚙️</span>
+            <span class="nav-label">Admin Panel</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="user-profile">
+          <div class="avatar">JD</div>
+          <div class="user-info">
+            <div class="user-name">Guest User</div>
+            <div class="user-status">Offline</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+
+      <div class="logo-container">
+        <div class="logo-icon">⚔️</div>
+        <h1 class="logo-text">GameZone</h1>
+      </div>
+
+      <button class="mobile-user-btn">👤</button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="page-container">
+        <h1 class="page-title">Teams & Tournaments</h1>
+
+        <div class="teams-grid">
+          <!-- Team Alpha -->
+          <div class="card-interactive">
+            <div class="team-header">
+              <div class="team-logo-large">🛡️</div>
+
+              <div>
+                <h3>Team Alpha</h3>
+                <p class="text-muted">Professional • 5 Members</p>
+              </div>
+            </div>
+
+            <div class="team-stats">
+              <div class="team-stat">
+                <span class="stat-label">Wins</span>
+                <span class="stat-value">342</span>
+              </div>
+
+              <div class="team-stat">
+                <span class="stat-label">Win Rate</span>
+                <span class="stat-value">68%</span>
+              </div>
+
+              <div class="team-stat">
+                <span class="stat-label">Rank</span>
+                <span class="stat-value">#12</span>
+              </div>
+            </div>
+
+            <button class="btn-primary full-width" onclick="openTeamModal()">
+              View Team
+            </button>
+          </div>
+
+          <!-- Fire Dragons -->
+          <div class="card-interactive">
+            <div class="team-header">
+              <div class="team-logo-large">🔥</div>
+
+              <div>
+                <h3>Fire Dragons</h3>
+                <p class="text-muted">Semi-Pro • 5 Members</p>
+              </div>
+            </div>
+
+            <div class="team-stats">
+              <div class="team-stat">
+                <span class="stat-label">Wins</span>
+                <span class="stat-value">287</span>
+              </div>
+
+              <div class="team-stat">
+                <span class="stat-label">Win Rate</span>
+                <span class="stat-value">62%</span>
+              </div>
+
+              <div class="team-stat">
+                <span class="stat-label">Rank</span>
+                <span class="stat-value">#28</span>
+              </div>
+            </div>
+
+            <button class="btn-primary full-width">View Team</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Team Modal -->
+    <div id="teamModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeTeamModal()">&times;</span>
+
+        <h2>🛡️ Team Alpha</h2>
+        <p class="text-muted">Professional MLBB Team</p>
+
+        <div class="team-stats">
+          <div class="team-stat">
+            <span class="stat-label">Wins</span>
+            <span class="stat-value">342</span>
+          </div>
+
+          <div class="team-stat">
+            <span class="stat-label">Win Rate</span>
+            <span class="stat-value">68%</span>
+          </div>
+
+          <div class="team-stat">
+            <span class="stat-label">Rank</span>
+            <span class="stat-value">#12</span>
+          </div>
+        </div>
+
+        <h3>Team Members</h3>
+
+        <ul>
+          <li>PlayerOne – Jungler</li>
+          <li>Shadow – Mid Lane</li>
+          <li>Blaze – Gold Lane</li>
+          <li>Titan – EXP Lane</li>
+          <li>Nova – Roamer</li>
+        </ul>
+
+        <button class="btn-primary full-width">Join Team</button>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/modal.js"></script>
+  </body>
+</html>

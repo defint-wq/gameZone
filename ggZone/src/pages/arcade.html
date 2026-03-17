@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameZone – Arcade</title>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-container">
+          <div class="logo-icon">⚔️</div>
+          <h1 class="logo-text">gameZone</h1>
+        </div>
+      </div>
+
+      <ul class="div-menu">
+        <li>
+          <a href="../index.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">👤</span>
+            <span class="nav-label">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="shop.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">🛒</span>
+            <span class="nav-label">Shop</span>
+          </a>
+        </li>
+        <li>
+          <a href="arcade.html" class="nav-item nav-item-active">
+            <span class="nav-icon">🎮</span>
+            <span class="nav-label">Arcade</span>
+          </a>
+        </li>
+        <li>
+          <a href="teams.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">👥</span>
+            <span class="nav-label">Teams</span>
+          </a>
+        </li>
+        <li>
+          <a href="wallet.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">$</span>
+            <span class="nav-label">Wallet</span>
+          </a>
+        </li>
+        <li>
+          <a href="admin.html" class="nav-item nav-item-inactive admin-item">
+            <span class="nav-icon">⚙️</span>
+            <span class="nav-label">Admin Panel</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="user-profile">
+          <div class="avatar">JD</div>
+          <div class="user-info">
+            <div class="user-name">Guest User</div>
+            <div class="user-status">Offline</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="mobile-header">
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      <div class="logo-container">
+        <div class="logo-icon">⚔️</div>
+        <h1 class="logo-text">GameZone</h1>
+      </div>
+      <button class="mobile-user-btn">👤</button>
+    </header>
+
+    <main class="main-content">
+      <div class="page-container">
+        <h1 class="page-title">Gaming Arcade</h1>
+
+        <div class="tabs">
+          <button class="tab-btn tab-btn-active" data-tab="matches">
+            🎮 Live Matches
+          </button>
+          <button class="tab-btn" data-tab="betting">💰 Match Betting</button>
+        </div>
+
+        <div class="tab-content active" id="matches">
+          <div class="matches-grid">
+            <div class="match-card card">
+              <div class="match-header">
+                <span class="badge-warning">Upcoming</span>
+                <span class="match-time">Starts in 45m</span>
+              </div>
+
+              <div class="match-teams">
+                <div class="team">
+                  <div class="team-logo">🔥</div>
+                  <div class="team-name">Fire Dragons</div>
+                  <div class="team-score">-</div>
+                </div>
+
+                <div class="vs">VS</div>
+
+                <div class="team">
+                  <div class="team-score">-</div>
+                  <div class="team-name">Ice Titans</div>
+                  <div class="team-logo">❄️</div>
+                </div>
+              </div>
+
+              <div class="match-info">
+                <span>🏆 Regional Finals</span>
+                <span>💰 $10K Prize Pool</span>
+              </div>
+
+              <button class="btn-secondary full-width">Set Reminder</button>
+            </div>
+
+            <div class="match-card card">
+              <div class="match-header">
+                <span class="badge-success">Live</span>
+                <span class="match-time">Now Playing</span>
+              </div>
+
+              <div class="match-teams">
+                <div class="team">
+                  <div class="team-logo">🛡️</div>
+                  <div class="team-name">Team Alpha</div>
+                  <div class="team-score">2</div>
+                </div>
+
+                <div class="vs">VS</div>
+
+                <div class="team">
+                  <div class="team-score">1</div>
+                  <div class="team-name">Shadow Core</div>
+                  <div class="team-logo">🌑</div>
+                </div>
+              </div>
+
+              <div class="match-info">
+                <span>⚔️ Semi Finals</span>
+                <span>👀 25K Watching</span>
+              </div>
+
+              <button class="btn-primary full-width">Watch Match</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="betting">
+          <div class="section-container">
+            <h3>Active Bets</h3>
+
+            <div class="bets-list">
+              <div class="bet-item">
+                <div class="bet-match">Team Alpha vs Team Omega</div>
+                <div class="bet-details">
+                  <span>Bet on: Team Alpha</span>
+                  <span>Amount: $50</span>
+                  <span class="badge-pending">Pending</span>
+                </div>
+              </div>
+
+              <div class="bet-item">
+                <div class="bet-match">Fire Dragons vs Ice Titans</div>
+                <div class="bet-details">
+                  <span>Bet on: Ice Titans</span>
+                  <span>Amount: $25</span>
+                  <span class="badge-success">Won +$45</span>
+                </div>
+              </div>
+
+              <div class="bet-item">
+                <div class="bet-match">Nova Squad vs Blaze Unit</div>
+                <div class="bet-details">
+                  <span>Bet on: Nova Squad</span>
+                  <span>Amount: $35</span>
+                  <span class="badge-warning">Open</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/tabs.js"></script>
+  </body>
+</html>

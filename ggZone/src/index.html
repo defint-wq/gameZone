@@ -4,9 +4,12 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GameZone</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <!-- Navigation Sidebar -->
@@ -20,58 +23,45 @@
 
       <ul class="div-menu">
         <li>
-          <a href="#home" class="nav-item nav-item-active" data-page="home">
+          <a href="index.html" class="nav-item nav-item-active">
             <span class="nav-icon">🏠</span>
             <span class="nav-label">Home</span>
           </a>
         </li>
         <li>
-          <a
-            href="#profile"
-            class="nav-item nav-item-inactive"
-            data-page="profile"
-          >
+          <a href="pages/profile.html" class="nav-item nav-item-inactive">
             <span class="nav-icon">👤</span>
             <span class="nav-label">Profile</span>
           </a>
         </li>
         <li>
-          <a href="#shop" class="nav-item nav-item-inactive" data-page="shop">
+          <a href="pages/shop.html" class="nav-item nav-item-inactive">
             <span class="nav-icon">🛒</span>
             <span class="nav-label">Shop</span>
           </a>
         </li>
         <li>
-          <a
-            href="#arcade"
-            class="nav-item nav-item-inactive"
-            data-page="arcade"
-          >
+          <a href="pages/arcade.html" class="nav-item nav-item-inactive">
             <span class="nav-icon">🎮</span>
             <span class="nav-label">Arcade</span>
           </a>
         </li>
         <li>
-          <a href="#teams" class="nav-item nav-item-inactive" data-page="teams">
+          <a href="pages/teams.html" class="nav-item nav-item-inactive">
             <span class="nav-icon">👥</span>
             <span class="nav-label">Teams</span>
           </a>
         </li>
         <li>
-          <a
-            href="#wallet"
-            class="nav-item nav-item-inactive"
-            data-page="wallet"
-          >
+          <a href="pages/wallet.html" class="nav-item nav-item-inactive">
             <span class="nav-icon">$</span>
             <span class="nav-label">Wallet</span>
           </a>
         </li>
         <li>
           <a
-            href="#admin"
+            href="pages/admin.html"
             class="nav-item nav-item-inactive admin-item"
-            data-page="admin"
           >
             <span class="nav-icon">⚙️</span>
             <span class="nav-label">Admin Panel</span>
@@ -102,746 +92,255 @@
 
     <!-- Main Content -->
     <main class="main-content">
-      <!-- Home Page -->
-      <section id="home" class="page active">
-        <div class="page-container">
-          <!-- Hero Section -->
-          <div class="section-hero">
-            <div class="overlay-gradient"></div>
-            <div
-              class="glow-orb glow-orb-primary"
-              style="top: -100px; right: -100px"
-            ></div>
-            <div
-              class="glow-orb glow-orb-secondary"
-              style="bottom: -100px; left: -100px"
-            ></div>
+      <div class="page-container">
+        <!-- Hero Section -->
+        <div class="section-hero">
+          <div class="overlay-gradient"></div>
+          <div
+            class="glow-orb glow-orb-primary"
+            style="top: -100px; right: -100px"
+          ></div>
+          <div
+            class="glow-orb glow-orb-secondary"
+            style="bottom: -100px; left: -100px"
+          ></div>
 
-            <div style="position: relative; z-index: 1">
-              <h1 class="hero-title text-gradient-primary">
-                Mobile Legends: Bang Bang
-              </h1>
-              <p class="hero-subtitle">
-                Join millions of players in the ultimate 5v5 MOBA experience.
-                Battle, strategize, and dominate the arena!
-              </p>
+          <div style="position: relative; z-index: 1">
+            <h1 class="hero-title text-gradient-primary">
+              Mobile Legends: Bang Bang
+            </h1>
+            <p class="hero-subtitle">
+              Join millions of players in the ultimate 5v5 MOBA experience.
+              Battle, strategize, and dominate the arena!
+            </p>
 
-              <div class="hero-actions">
-                <button class="btn-primary" onclick="navigateTo('arcade')">
-                  <span>🎮</span>
-                  Enter Arcade
-                  <span>→</span>
-                </button>
-                <button class="btn-secondary" onclick="navigateTo('shop')">
-                  Browse Shop
-                </button>
-              </div>
-
-              <div class="hero-stats">
-                <div class="stat-item">
-                  <div class="stat-value gradient-arcade">2.5M+</div>
-                  <div class="stat-label">Active Players</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-value gradient-profile">150+</div>
-                  <div class="stat-label">Live Matches</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-value gradient-shop">5K+</div>
-                  <div class="stat-label">Teams</div>
-                </div>
-                <div class="stat-item">
-                  <div
-                    class="stat-value"
-                    style="
-                      background: linear-gradient(to right, #f97316, #ef4444);
-                      -webkit-background-clip: text;
-                      background-clip: text;
-                      color: transparent;
-                    "
-                  >
-                    300+
-                  </div>
-                  <div class="stat-label">Tournaments</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Features Section -->
-          <h2 class="section-header">Explore Features</h2>
-          <div class="features-grid">
-            <div class="card-feature" onclick="navigateTo('arcade')">
-              <div class="feature-icon gradient-arcade">🎮</div>
-              <h3>Epic Battles</h3>
-              <p>
-                Engage in thrilling 5v5 battles with strategic gameplay and
-                teamwork.
-              </p>
-            </div>
-
-            <div class="card-feature" onclick="navigateTo('shop')">
-              <div class="feature-icon gradient-shop">💎</div>
-              <h3>Premium Skins</h3>
-              <p>
-                Unlock exclusive skins and customize your heroes like never
-                before.
-              </p>
-            </div>
-
-            <div class="card-feature" onclick="navigateTo('teams')">
-              <div class="feature-icon gradient-teams">🏆</div>
-              <h3>Win Tournaments</h3>
-              <p>
-                Compete in epic tournaments and climb the ranks to become a
-                legend.
-              </p>
-            </div>
-
-            <div class="card-feature" onclick="navigateTo('profile')">
-              <div class="feature-icon gradient-profile">⭐</div>
-              <h3>Track Progress</h3>
-              <p>
-                Monitor your stats, achievements, and rise through the ranks.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="page-container">
-          <h1 class="page-title">Latest News & Updates</h1>
-
-          <div class="news-grid">
-            <article class="news-card card-interactive">
-              <div
-                class="news-image"
-                style="
-                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                  height: 200px;
-                  border-radius: 12px;
-                  margin-bottom: 16px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-size: 48px;
-                "
+            <div class="hero-actions">
+              <button
+                class="btn-primary"
+                onclick="window.location.href = 'pages/arcade.html'"
               >
-                🏆
-              </div>
-              <span class="badge-info">Tournament</span>
-              <h3>Grand Championship Announced</h3>
-              <p class="news-excerpt">
-                The official MLBB Grand Championship will begin next month with
-                top teams from different regions competing for a $500K prize
-                pool.
-              </p>
-              <div class="news-meta">
-                <span class="news-date">📅 March 6, 2026</span>
-                <span class="news-author">👤 Admin</span>
-              </div>
-              <button class="btn-primary full-width">Read More</button>
-            </article>
+                <span>🎮</span>
+                Enter Arcade
+                <span>→</span>
+              </button>
 
-            <article class="news-card card-interactive">
-              <div
-                class="news-image"
-                style="
-                  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-                  height: 200px;
-                  border-radius: 12px;
-                  margin-bottom: 16px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-size: 48px;
-                "
+              <button
+                class="btn-secondary"
+                onclick="window.location.href = 'pages/shop.html'"
               >
-                💎
-              </div>
-              <span class="badge-warning">Update</span>
-              <h3>New Collector Skins Released</h3>
-              <p class="news-excerpt">
-                Several new collector skins have been added to the game, giving
-                players more premium customization options for their favorite
-                heroes.
-              </p>
-              <div class="news-meta">
-                <span class="news-date">📅 March 5, 2026</span>
-                <span class="news-author">👤 Admin</span>
-              </div>
-              <button class="btn-primary full-width">Read More</button>
-            </article>
-
-            <article class="news-card card-interactive">
-              <div
-                class="news-image"
-                style="
-                  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-                  height: 200px;
-                  border-radius: 12px;
-                  margin-bottom: 16px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-size: 48px;
-                "
-              >
-                ⚔️
-              </div>
-              <span class="badge-success">Esports</span>
-              <h3>Top Team Wins Spring Cup</h3>
-              <p class="news-excerpt">
-                The Spring Cup ended with a thrilling final match, where Team
-                Alpha secured victory in game five with an incredible comeback
-                performance.
-              </p>
-              <div class="news-meta">
-                <span class="news-date">📅 March 4, 2026</span>
-                <span class="news-author">👤 Admin</span>
-              </div>
-              <button class="btn-primary full-width">Read More</button>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Profile Page -->
-      <section id="profile" class="page">
-        <div class="page-container">
-          <h1 class="page-title">My Profile</h1>
-
-          <div class="profile-grid">
-            <div class="card">
-              <div class="profile-header">
-                <div class="avatar-lg">JD</div>
-                <div class="profile-info">
-                  <h2>John Doe</h2>
-                  <p class="text-muted">john.doe@email.com</p>
-                  <div class="badge-primary">Level 42</div>
-                </div>
-              </div>
-
-              <div class="profile-stats">
-                <div class="stat-box">
-                  <div class="stat-number gradient-primary">1,234</div>
-                  <div class="stat-label">Total Matches</div>
-                </div>
-                <div class="stat-box">
-                  <div class="stat-number gradient-shop">687</div>
-                  <div class="stat-label">Wins</div>
-                </div>
-                <div class="stat-box">
-                  <div class="stat-number gradient-arcade">55.7%</div>
-                  <div class="stat-label">Win Rate</div>
-                </div>
-              </div>
-
-              <button class="btn-primary full-width" onclick="openModal()">
-                Edit Profile
+                Browse Shop
               </button>
             </div>
 
-            <!-- Edit Profile Modal -->
-            <div id="editProfileModal" class="modal">
-              <div class="modal-content">
-                <span class="close-btn" onclick="closeModal()">&times;</span>
-                <h2>Edit Profile</h2>
-
-                <form>
-                  <label>Username</label>
-                  <input type="text" placeholder="Enter username" />
-
-                  <label>Email</label>
-                  <input type="email" placeholder="Enter email" />
-
-                  <label>Bio</label>
-                  <textarea placeholder="Write something about you"></textarea>
-
-                  <button type="submit" class="btn-primary full-width">
-                    Save Changes
-                  </button>
-                </form>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-value gradient-arcade">2.5M+</div>
+                <div class="stat-label">Active Players</div>
               </div>
-            </div>
-
-            <div class="card">
-              <h3>Recent Achievements</h3>
-              <div class="achievements-list">
-                <div class="achievement-item">
-                  <div class="achievement-icon">🏆</div>
-                  <div>
-                    <h4>Tournament Winner</h4>
-                    <p class="text-muted">Won Spring Championship 2026</p>
-                  </div>
-                  <span class="badge-success">New</span>
-                </div>
-
-                <div class="achievement-item">
-                  <div class="achievement-icon">⭐</div>
-                  <div>
-                    <h4>Legendary Player</h4>
-                    <p class="text-muted">Reached Mythic Rank</p>
-                  </div>
-                  <span class="badge-info">Unlocked</span>
-                </div>
-
-                <div class="achievement-item">
-                  <div class="achievement-icon">💎</div>
-                  <div>
-                    <h4>Collector</h4>
-                    <p class="text-muted">Own 50+ premium skins</p>
-                  </div>
-                  <span class="badge-warning">In Progress</span>
-                </div>
+              <div class="stat-item">
+                <div class="stat-value gradient-profile">150+</div>
+                <div class="stat-label">Live Matches</div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Shop Page -->
-      <section id="shop" class="page">
-        <div class="page-container">
-          <h1 class="page-title">Account Marketplace</h1>
-
-          <div class="search-section">
-            <div class="search-bar">
-              <span class="search-icon">🔍</span>
-              <input
-                type="text"
-                class="input-search"
-                placeholder="Search accounts by rank, heroes, skins..."
-              />
-            </div>
-            <button class="btn-primary">Search</button>
-          </div>
-
-          <div class="shop-grid">
-            <div class="card-interactive">
-              <div class="account-badge badge-success">Premium</div>
-              <h3>Mythic Glory Account</h3>
-              <div class="account-details">
-                <p><strong>Rank:</strong> Mythic Glory</p>
-                <p><strong>Heroes:</strong> 85/120</p>
-                <p><strong>Skins:</strong> 120+ Premium</p>
-                <p><strong>Win Rate:</strong> 62%</p>
+              <div class="stat-item">
+                <div class="stat-value gradient-shop">5K+</div>
+                <div class="stat-label">Teams</div>
               </div>
-              <div class="account-price">
-                <span class="price-label">Price:</span>
-                <span class="price-value">$299</span>
-              </div>
-              <button class="btn-primary full-width" onclick="openDetails()">
-                View Details
-              </button>
-            </div>
-
-            <div id="accountModal" class="modal">
-              <div class="modal-content">
-                <span class="close-btn" onclick="closeDetails()">&times;</span>
-
-                <h2>Mythic Glory Account</h2>
-
-                <div class="account-details">
-                  <p><strong>Rank:</strong> Mythic Glory</p>
-                  <p><strong>Heroes:</strong> 85 / 120</p>
-                  <p><strong>Skins:</strong> 120+ Premium</p>
-                  <p><strong>Win Rate:</strong> 62%</p>
-                  <p><strong>Emblems:</strong> Maxed</p>
-                  <p><strong>Region:</strong> Global</p>
-                  <p><strong>Account Level:</strong> 60</p>
-                </div>
-
-                <div class="account-price">
-                  <span class="price-label">Price:</span>
-                  <span class="price-value">$299</span>
-                </div>
-
-                <button class="btn-primary full-width">Buy Now</button>
-              </div>
-            </div>
-
-            <div class="card-interactive">
-              <div class="account-badge badge-info">Featured</div>
-              <h3>Legend III Account</h3>
-              <div class="account-details">
-                <p><strong>Rank:</strong> Legend III</p>
-                <p><strong>Heroes:</strong> 65/120</p>
-                <p><strong>Skins:</strong> 45 Premium</p>
-                <p><strong>Win Rate:</strong> 58%</p>
-              </div>
-              <div class="account-price">
-                <span class="price-label">Price:</span>
-                <span class="price-value">$149</span>
-              </div>
-              <button class="btn-primary full-width">View Details</button>
-            </div>
-
-            <div class="card-interactive">
-              <div class="account-badge badge-warning">Hot Deal</div>
-              <h3>Epic I Account</h3>
-              <div class="account-details">
-                <p><strong>Rank:</strong> Epic I</p>
-                <p><strong>Heroes:</strong> 42/120</p>
-                <p><strong>Skins:</strong> 25 Premium</p>
-                <p><strong>Win Rate:</strong> 55%</p>
-              </div>
-              <div class="account-price">
-                <span class="price-label">Price:</span>
-                <span class="price-value">$79</span>
-              </div>
-              <button class="btn-primary full-width">View Details</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Arcade Page -->
-      <section id="arcade" class="page">
-        <div class="page-container">
-          <h1 class="page-title">Gaming Arcade</h1>
-
-          <div class="tabs">
-            <button class="tab-btn tab-btn-active" data-tab="matches">
-              🎮 Live Matches
-            </button>
-            <button class="tab-btn" data-tab="betting">💰 Match Betting</button>
-          </div>
-
-          <!-- Live Matches Tab -->
-          <div class="tab-content active" id="matches">
-            <div class="matches-grid">
-              <div class="match-card card">
-                <div class="match-header">
-                  <span class="badge-warning">Upcoming</span>
-                  <span class="match-time">Starts in 45m</span>
-                </div>
-                <div class="match-teams">
-                  <div class="team">
-                    <div class="team-logo">🔥</div>
-                    <div class="team-name">Fire Dragons</div>
-                    <div class="team-score">-</div>
-                  </div>
-                  <div class="vs">VS</div>
-                  <div class="team">
-                    <div class="team-score">-</div>
-                    <div class="team-name">Ice Titans</div>
-                    <div class="team-logo">❄️</div>
-                  </div>
-                </div>
-                <div class="match-info">
-                  <span>🏆 Regional Finals</span>
-                  <span>💰 $10K Prize Pool</span>
-                </div>
-                <button class="btn-secondary full-width">Set Reminder</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Betting Tab -->
-          <div class="tab-content" id="betting">
-            <div class="section-container">
-              <h3>Active Bets</h3>
-              <div class="bets-list">
-                <div class="bet-item">
-                  <div class="bet-match">Team Alpha vs Team Omega</div>
-                  <div class="bet-details">
-                    <span>Bet on: Team Alpha</span>
-                    <span>Amount: $50</span>
-                    <span class="badge-pending">Pending</span>
-                  </div>
-                </div>
-                <div class="bet-item">
-                  <div class="bet-match">Fire Dragons vs Ice Titans</div>
-                  <div class="bet-details">
-                    <span>Bet on: Ice Titans</span>
-                    <span>Amount: $25</span>
-                    <span class="badge-success">Won +$45</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Teams Page -->
-      <section id="teams" class="page">
-        <div class="page-container">
-          <h1 class="page-title">Teams & Tournaments</h1>
-
-          <div class="teams-grid">
-            <div class="card-interactive">
-              <div class="team-header">
-                <div class="team-logo-large">🛡️</div>
-                <div>
-                  <h3>Team Alpha</h3>
-                  <p class="text-muted">Professional • 5 Members</p>
-                </div>
-              </div>
-              <div class="team-stats">
-                <div class="team-stat">
-                  <span class="stat-label">Wins</span>
-                  <span class="stat-value">342</span>
-                </div>
-                <div class="team-stat">
-                  <span class="stat-label">Win Rate</span>
-                  <span class="stat-value">68%</span>
-                </div>
-                <div class="team-stat">
-                  <span class="stat-label">Rank</span>
-                  <span class="stat-value">#12</span>
-                </div>
-              </div>
-              <button class="btn-primary full-width" onclick="openTeam()">
-                View Team
-              </button>
-            </div>
-
-            <div id="teamModal" class="modal">
-              <div class="modal-content">
-                <span class="close-btn" onclick="closeTeam()">&times;</span>
-
-                <h2>🛡️ Team Alpha</h2>
-                <p class="text-muted">Professional MLBB Team</p>
-
-                <div class="team-stats">
-                  <div class="team-stat">
-                    <span class="stat-label">Wins</span>
-                    <span class="stat-value">342</span>
-                  </div>
-
-                  <div class="team-stat">
-                    <span class="stat-label">Win Rate</span>
-                    <span class="stat-value">68%</span>
-                  </div>
-
-                  <div class="team-stat">
-                    <span class="stat-label">Rank</span>
-                    <span class="stat-value">#12</span>
-                  </div>
-                </div>
-
-                <h3>Team Members</h3>
-                <ul>
-                  <li>PlayerOne – Jungler</li>
-                  <li>Shadow – Mid Lane</li>
-                  <li>Blaze – Gold Lane</li>
-                  <li>Titan – EXP Lane</li>
-                  <li>Nova – Roamer</li>
-                </ul>
-
-                <button class="btn-primary full-width">Join Team</button>
-              </div>
-            </div>
-
-            <div class="card-interactive">
-              <div class="team-header">
-                <div class="team-logo-large">🔥</div>
-                <div>
-                  <h3>Fire Dragons</h3>
-                  <p class="text-muted">Semi-Pro • 5 Members</p>
-                </div>
-              </div>
-              <div class="team-stats">
-                <div class="team-stat">
-                  <span class="stat-label">Wins</span>
-                  <span class="stat-value">287</span>
-                </div>
-                <div class="team-stat">
-                  <span class="stat-label">Win Rate</span>
-                  <span class="stat-value">62%</span>
-                </div>
-                <div class="team-stat">
-                  <span class="stat-label">Rank</span>
-                  <span class="stat-value">#28</span>
-                </div>
-              </div>
-              <button class="btn-primary full-width">View Team</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="wallet" class="page">
-        <div class="page-container">
-          <div class="wallet-card card">
-            <h3>💰 My Wallet</h3>
-            <div class="balance-display">
-              <div class="balance-label">Available Balance</div>
-              <div class="balance-amount text-gradient-primary">$1,250.00</div>
-            </div>
-            <div class="wallet-actions">
-              <button class="btn-primary">💳 Recharge</button>
-              <button class="btn-secondary">💸 Withdraw</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Recent Transactions</h3>
-            <div class="transactions-list">
-              <div class="transaction-item">
+              <div class="stat-item">
                 <div
-                  class="transaction-icon icon-container-sm"
+                  class="stat-value"
                   style="
-                    background: linear-gradient(to right, #10b981, #14b8a6);
+                    background: linear-gradient(to right, #f97316, #ef4444);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
                   "
                 >
-                  💳
+                  300+
                 </div>
-                <div class="transaction-details">
-                  <div class="transaction-name">Wallet Recharge</div>
-                  <div class="transaction-date">2026-03-10</div>
-                </div>
-                <div class="transaction-amount positive">+$100.00</div>
-              </div>
-              <!-- <span class="badge-info">Tournament</span>
-              <h3>Grand Championship Announced</h3>
-              <p class="news-excerpt">
-                The official MLBB Grand Championship will begin next month with
-                top teams from different regions competing for a $500K prize
-                pool.
-              </p>
-              <div class="news-meta">
-                <span class="news-date">📅 March 6, 2026</span>
-                <span class="news-author">👤 Admin</span>
-              </div>
-              <button class="btn-primary full-width" onclick="openNews()">
-                Read More
-              </button> -->
-            </article>
-
-            <div id="newsModal" class="modal">
-              <div class="modal-content">
-                <span class="close-btn" onclick="closeNews()">&times;</span>
-
-                <h2>🏆 Grand Championship Announced</h2>
-
-                <p class="text-muted">📅 March 6, 2026 • 👤 Admin</p>
-
-                <p>
-                  The official MLBB Grand Championship will begin next month
-                  with top teams from different regions competing for a massive
-                  $500,000 prize pool.
-                </p>
-
-                <p>
-                  The tournament will feature the best teams from Asia, Europe,
-                  and North America. Fans can expect intense matches, strategic
-                  gameplay, and amazing highlights throughout the event.
-                </p>
-
-                <p>
-                  Registration for teams will open soon, and fans will be able
-                  to watch the matches live through official streaming
-                  platforms.
-                </p>
-
-                <button class="btn-primary full-width" onclick="closeNews()">
-                  Close
-                </button>
-              </div>
-            </div>
-
-            <article class="news-card card-interactive">
-              <div
-                class="news-image"
-                style="
-                  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-                  height: 200px;
-                  border-radius: 12px;
-                  margin-bottom: 16px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-size: 48px;
-                "
-              >
-                💎
+                <div class="stat-label">Tournaments</div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Admin Panel Page -->
-      <section id="admin" class="page">
-        <div class="page-container">
-          <h1 class="page-title text-gradient-admin">⚙️ Admin Panel</h1>
 
-          <div class="admin-grid">
-            <div class="card admin-card">
-              <h3>📊 Platform Statistics</h3>
-              <div class="admin-stats">
-                <div class="admin-stat-item">
-                  <span class="admin-stat-label">Total Users</span>
-                  <span class="admin-stat-value">2,547,890</span>
-                </div>
-                <div class="admin-stat-item">
-                  <span class="admin-stat-label">Active Accounts</span>
-                  <span class="admin-stat-value">12,345</span>
-                </div>
-                <div class="admin-stat-item">
-                  <span class="admin-stat-label">Total Revenue</span>
-                  <span class="admin-stat-value">$1.2M</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="card admin-card">
-              <h3>⚡ Quick Actions</h3>
-              <div class="admin-actions">
-                <button class="btn-admin full-width">Add New Account</button>
-                <button class="btn-admin full-width">Manage Users</button>
-                <button class="btn-admin full-width">View Reports</button>
-                <button class="btn-destructive full-width">
-                  System Settings
-                </button>
-              </div>
-            </div> -->
+        <!-- Features Section -->
+        <h2 class="section-header">Explore Features</h2>
+        <div class="features-grid">
+          <div
+            class="card-feature"
+            onclick="window.location.href = 'pages/arcade.html'"
+          >
+            <div class="feature-icon gradient-arcade">🎮</div>
+            <h3>Epic Battles</h3>
+            <p>
+              Engage in thrilling 5v5 battles with strategic gameplay and
+              teamwork.
+            </p>
           </div>
 
-          <div class="card">
-            <h3>Recent User Activity</h3>
-            <div class="activity-table">
-              <table style="width: 100%; border-collapse: collapse">
-                <thead>
-                  <tr>
-                    <th class="table-header">User</th>
-                    <th class="table-header">Action</th>
-                    <th class="table-header">Date</th>
-                    <th class="table-header">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="table-row">
-                    <td class="table-cell">john.doe@email.com</td>
-                    <td class="table-cell">Account Purchase</td>
-                    <td class="table-cell">2026-03-10</td>
-                    <td class="table-cell">
-                      <span class="badge-success">Completed</span>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell">jane.smith@email.com</td>
-                    <td class="table-cell">Wallet Recharge</td>
-                    <td class="table-cell">2026-03-10</td>
-                    <td class="table-cell">
-                      <span class="badge-success">Completed</span>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell">mike.wilson@email.com</td>
-                    <td class="table-cell">Bet Placed</td>
-                    <td class="table-cell">2026-03-09</td>
-                    <td class="table-cell">
-                      <span class="badge-pending">Pending</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div
+            class="card-feature"
+            onclick="window.location.href = 'pages/shop.html'"
+          >
+            <div class="feature-icon gradient-shop">💎</div>
+            <h3>Premium Skins</h3>
+            <p>
+              Unlock exclusive skins and customize your heroes like never
+              before.
+            </p>
+          </div>
+
+          <div
+            class="card-feature"
+            onclick="window.location.href = 'pages/teams.html'"
+          >
+            <div class="feature-icon gradient-teams">🏆</div>
+            <h3>Win Tournaments</h3>
+            <p>
+              Compete in epic tournaments and climb the ranks to become a
+              legend.
+            </p>
+          </div>
+
+          <div
+            class="card-feature"
+            onclick="window.location.href = 'pages/profile.html'"
+          >
+            <div class="feature-icon gradient-profile">⭐</div>
+            <h3>Track Progress</h3>
+            <p>Monitor your stats, achievements, and rise through the ranks.</p>
           </div>
         </div>
-      </section>
+      </div>
+
+      <div class="page-container">
+        <h1 class="page-title">Latest News & Updates</h1>
+
+        <div class="news-grid">
+          <article class="news-card card-interactive">
+            <div
+              class="news-image"
+              style="
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                height: 200px;
+                border-radius: 12px;
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 48px;
+              "
+            >
+              🏆
+            </div>
+            <span class="badge-info">Tournament</span>
+            <h3>Grand Championship Announced</h3>
+            <p class="news-excerpt">
+              The official MLBB Grand Championship will begin next month with
+              top teams from different regions competing for a $500K prize pool.
+            </p>
+            <div class="news-meta">
+              <span class="news-date">📅 March 6, 2026</span>
+              <span class="news-author">👤 Admin</span>
+            </div>
+            <button class="btn-primary full-width" onclick="openNewsModal()">
+              Read More
+            </button>
+          </article>
+
+          <article class="news-card card-interactive">
+            <div
+              class="news-image"
+              style="
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                height: 200px;
+                border-radius: 12px;
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 48px;
+              "
+            >
+              💎
+            </div>
+            <span class="badge-warning">Update</span>
+            <h3>New Collector Skins Released</h3>
+            <p class="news-excerpt">
+              Several new collector skins have been added to the game, giving
+              players more premium customization options for their favorite
+              heroes.
+            </p>
+            <div class="news-meta">
+              <span class="news-date">📅 March 5, 2026</span>
+              <span class="news-author">👤 Admin</span>
+            </div>
+            <button class="btn-primary full-width">Read More</button>
+          </article>
+
+          <article class="news-card card-interactive">
+            <div
+              class="news-image"
+              style="
+                background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                height: 200px;
+                border-radius: 12px;
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 48px;
+              "
+            >
+              ⚔️
+            </div>
+            <span class="badge-success">Esports</span>
+            <h3>Top Team Wins Spring Cup</h3>
+            <p class="news-excerpt">
+              The Spring Cup ended with a thrilling final match, where Team
+              Alpha secured victory in game five with an incredible comeback
+              performance.
+            </p>
+            <div class="news-meta">
+              <span class="news-date">📅 March 4, 2026</span>
+              <span class="news-author">👤 Admin</span>
+            </div>
+            <button class="btn-primary full-width">Read More</button>
+          </article>
+        </div>
+      </div>
     </main>
+
+    <!-- News Modal -->
+    <div id="newsModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeNewsModal()">&times;</span>
+
+        <h2>🏆 Grand Championship Announced</h2>
+        <p class="text-muted">📅 March 6, 2026 • 👤 Admin</p>
+
+        <p>
+          The official MLBB Grand Championship will begin next month with top
+          teams from different regions competing for a massive $500,000 prize
+          pool.
+        </p>
+
+        <p>
+          The tournament will feature the best teams from Asia, Europe, and
+          North America. Fans can expect intense matches, strategic gameplay,
+          and amazing highlights throughout the event.
+        </p>
+
+        <p>
+          Registration for teams will open soon, and fans will be able to watch
+          the matches live through official streaming platforms.
+        </p>
+
+        <button class="btn-primary full-width" onclick="closeNewsModal()">
+          Close
+        </button>
+      </div>
+    </div>
 
     <!-- Auth Modal -->
     <div id="authModal" class="modal-backdrop" style="display: none">
@@ -863,6 +362,7 @@
             ✕
           </button>
         </div>
+
         <div class="modal-body">
           <div class="auth-tabs">
             <button class="tab-btn tab-btn-active" data-auth-tab="signin">
@@ -879,7 +379,7 @@
                 type="email"
                 class="input"
                 placeholder="your@email.com"
-                required
+                required="required"
               />
             </div>
             <div class="form-group">
@@ -888,7 +388,7 @@
                 type="password"
                 class="input"
                 placeholder="Enter your password"
-                required
+                required="required"
               />
             </div>
             <button type="submit" class="btn-primary full-width">
@@ -904,7 +404,7 @@
                 type="text"
                 class="input"
                 placeholder="Choose a username"
-                required
+                required="required"
               />
             </div>
             <div class="form-group">
@@ -913,7 +413,7 @@
                 type="email"
                 class="input"
                 placeholder="your@email.com"
-                required
+                required="required"
               />
             </div>
             <div class="form-group">
@@ -922,7 +422,7 @@
                 type="password"
                 class="input"
                 placeholder="Create a password"
-                required
+                required="required"
               />
             </div>
             <button type="submit" class="btn-primary full-width">
@@ -941,6 +441,12 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

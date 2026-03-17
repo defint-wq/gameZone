@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameZone – Shop</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-container">
+          <div class="logo-icon">⚔️</div>
+          <h1 class="logo-text">gameZone</h1>
+        </div>
+      </div>
+
+      <ul class="div-menu">
+        <li>
+          <a href="../index.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">👤</span>
+            <span class="nav-label">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="shop.html" class="nav-item nav-item-active">
+            <span class="nav-icon">🛒</span>
+            <span class="nav-label">Shop</span>
+          </a>
+        </li>
+        <li>
+          <a href="arcade.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">🎮</span>
+            <span class="nav-label">Arcade</span>
+          </a>
+        </li>
+        <li>
+          <a href="teams.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">👥</span>
+            <span class="nav-label">Teams</span>
+          </a>
+        </li>
+        <li>
+          <a href="wallet.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">$</span>
+            <span class="nav-label">Wallet</span>
+          </a>
+        </li>
+        <li>
+          <a href="admin.html" class="nav-item nav-item-inactive admin-item">
+            <span class="nav-icon">⚙️</span>
+            <span class="nav-label">Admin Panel</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="user-profile">
+          <div class="avatar">JD</div>
+          <div class="user-info">
+            <div class="user-name">Guest User</div>
+            <div class="user-status">Offline</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="mobile-header">
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      <div class="logo-container">
+        <div class="logo-icon">⚔️</div>
+        <h1 class="logo-text">GameZone</h1>
+      </div>
+      <button class="mobile-user-btn">👤</button>
+    </header>
+
+    <main class="main-content">
+      <div class="page-container">
+        <h1 class="page-title">Account Marketplace</h1>
+
+        <div class="search-section">
+          <div class="search-bar">
+            <span class="search-icon">🔍</span>
+            <input
+              type="text"
+              class="input-search"
+              placeholder="Search accounts by rank, heroes, skins..."
+            />
+          </div>
+          <button class="btn-primary">Search</button>
+        </div>
+
+        <div class="shop-grid">
+          <div class="card-interactive">
+            <div class="account-badge badge-success">Premium</div>
+            <h3>Mythic Glory Account</h3>
+            <div class="account-details">
+              <p><strong>Rank:</strong> Mythic Glory</p>
+              <p><strong>Heroes:</strong> 85/120</p>
+              <p><strong>Skins:</strong> 120+ Premium</p>
+              <p><strong>Win Rate:</strong> 62%</p>
+            </div>
+            <div class="account-price">
+              <span class="price-label">Price:</span>
+              <span class="price-value">$299</span>
+            </div>
+            <button class="btn-primary full-width" onclick="openAccountModal()">
+              View Details
+            </button>
+          </div>
+
+          <div class="card-interactive">
+            <div class="account-badge badge-info">Featured</div>
+            <h3>Legend III Account</h3>
+            <div class="account-details">
+              <p><strong>Rank:</strong> Legend III</p>
+              <p><strong>Heroes:</strong> 65/120</p>
+              <p><strong>Skins:</strong> 45 Premium</p>
+              <p><strong>Win Rate:</strong> 58%</p>
+            </div>
+            <div class="account-price">
+              <span class="price-label">Price:</span>
+              <span class="price-value">$149</span>
+            </div>
+            <button class="btn-primary full-width">View Details</button>
+          </div>
+
+          <div class="card-interactive">
+            <div class="account-badge badge-warning">Hot Deal</div>
+            <h3>Epic I Account</h3>
+            <div class="account-details">
+              <p><strong>Rank:</strong> Epic I</p>
+              <p><strong>Heroes:</strong> 42/120</p>
+              <p><strong>Skins:</strong> 25 Premium</p>
+              <p><strong>Win Rate:</strong> 55%</p>
+            </div>
+            <div class="account-price">
+              <span class="price-label">Price:</span>
+              <span class="price-value">$79</span>
+            </div>
+            <button class="btn-primary full-width">View Details</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="accountModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeAccountModal()">&times;</span>
+
+        <h2>Mythic Glory Account</h2>
+
+        <div class="account-details">
+          <p><strong>Rank:</strong> Mythic Glory</p>
+          <p><strong>Heroes:</strong> 85 / 120</p>
+          <p><strong>Skins:</strong> 120+ Premium</p>
+          <p><strong>Win Rate:</strong> 62%</p>
+          <p><strong>Emblems:</strong> Maxed</p>
+          <p><strong>Region:</strong> Global</p>
+          <p><strong>Account Level:</strong> 60</p>
+        </div>
+
+        <div class="account-price">
+          <span class="price-label">Price:</span>
+          <span class="price-value">$299</span>
+        </div>
+
+        <button class="btn-primary full-width">Buy Now</button>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/modal.js"></script>
+  </body>
+</html>

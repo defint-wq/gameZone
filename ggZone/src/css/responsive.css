@@ -1,0 +1,96 @@
+/* ============================================
+   responsive.css — Media Queries
+   ============================================ */
+
+/* ============================================
+   Tablet & Mobile (≤ 1024px)
+   ============================================ */
+
+@media (max-width: 1024px) {
+  /* Show mobile header */
+  .mobile-header {
+    display: flex;
+  }
+
+  /* Hide sidebar by default, slide in when open */
+  .sidebar {
+    transform: translateX(-100%);
+    box-shadow: none;
+  }
+  .sidebar.mobile-open {
+    transform: translateX(0);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Main content fills full width */
+  .main-content {
+    margin-left: 0;
+    padding: 5rem 1rem 1rem;
+  }
+
+  /* Collapse 2-col grids */
+  .profile-grid,
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   Mobile (≤ 768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* Hero */
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  /* All multi-col grids → single col */
+  .features-grid,
+  .shop-grid,
+  .teams-grid,
+  .news-grid,
+  .matches-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stats grids */
+  .profile-stats,
+  .team-stats {
+    grid-template-columns: 1fr;
+  }
+
+  /* Wallet */
+  .wallet-actions {
+    flex-direction: column;
+  }
+
+  /* Search */
+  .search-section {
+    flex-direction: column;
+  }
+  .search-bar {
+    min-width: 100%;
+  }
+
+  /* Balance */
+  .balance-amount {
+    font-size: 2rem;
+  }
+
+  /* Bet details stack */
+  .bet-details {
+    flex-direction: column;
+  }
+
+  /* Tables scroll horizontally */
+  .activity-table {
+    overflow-x: auto;
+  }
+}

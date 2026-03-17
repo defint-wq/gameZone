@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameZone – Admin Panel</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-container">
+          <div class="logo-icon">⚔️</div>
+          <h1 class="logo-text">gameZone</h1>
+        </div>
+      </div>
+
+      <ul class="div-menu">
+        <li>
+          <a href="../index.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">👤</span>
+            <span class="nav-label">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="shop.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">🛒</span>
+            <span class="nav-label">Shop</span>
+          </a>
+        </li>
+        <li>
+          <a href="arcade.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">🎮</span>
+            <span class="nav-label">Arcade</span>
+          </a>
+        </li>
+        <li>
+          <a href="teams.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">👥</span>
+            <span class="nav-label">Teams</span>
+          </a>
+        </li>
+        <li>
+          <a href="wallet.html" class="nav-item nav-item-inactive">
+            <span class="nav-icon">$</span>
+            <span class="nav-label">Wallet</span>
+          </a>
+        </li>
+        <li>
+          <a href="admin.html" class="nav-item nav-item-active admin-item">
+            <span class="nav-icon">⚙️</span>
+            <span class="nav-label">Admin Panel</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="user-profile">
+          <div class="avatar">JD</div>
+          <div class="user-info">
+            <div class="user-name">Guest User</div>
+            <div class="user-status">Offline</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="mobile-header">
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      <div class="logo-container">
+        <div class="logo-icon">⚔️</div>
+        <h1 class="logo-text">GameZone</h1>
+      </div>
+      <button class="mobile-user-btn">👤</button>
+    </header>
+
+    <main class="main-content">
+      <div class="page-container">
+        <h1 class="page-title text-gradient-admin">⚙️ Admin Panel</h1>
+
+        <div class="admin-grid">
+          <div class="card admin-card">
+            <h3>📊 Platform Statistics</h3>
+            <div class="admin-stats">
+              <div class="admin-stat-item">
+                <span class="admin-stat-label">Total Users</span>
+                <span class="admin-stat-value">2,547,890</span>
+              </div>
+              <div class="admin-stat-item">
+                <span class="admin-stat-label">Active Accounts</span>
+                <span class="admin-stat-value">12,345</span>
+              </div>
+              <div class="admin-stat-item">
+                <span class="admin-stat-label">Total Revenue</span>
+                <span class="admin-stat-value">$1.2M</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card admin-card">
+            <h3>⚡ Quick Actions</h3>
+            <div class="admin-actions">
+              <button class="btn-admin full-width">Add New Account</button>
+              <button class="btn-admin full-width">Manage Users</button>
+              <button class="btn-admin full-width">View Reports</button>
+              <button class="btn-destructive full-width">
+                System Settings
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Recent User Activity</h3>
+          <div class="activity-table">
+            <table style="width: 100%; border-collapse: collapse">
+              <thead>
+                <tr>
+                  <th class="table-header">User</th>
+                  <th class="table-header">Action</th>
+                  <th class="table-header">Date</th>
+                  <th class="table-header">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-row">
+                  <td class="table-cell">john.doe@email.com</td>
+                  <td class="table-cell">Account Purchase</td>
+                  <td class="table-cell">2026-03-10</td>
+                  <td class="table-cell">
+                    <span class="badge-success">Completed</span>
+                  </td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-cell">jane.smith@email.com</td>
+                  <td class="table-cell">Wallet Recharge</td>
+                  <td class="table-cell">2026-03-10</td>
+                  <td class="table-cell">
+                    <span class="badge-success">Completed</span>
+                  </td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-cell">mike.wilson@email.com</td>
+                  <td class="table-cell">Bet Placed</td>
+                  <td class="table-cell">2026-03-09</td>
+                  <td class="table-cell">
+                    <span class="badge-pending">Pending</span>
+                  </td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-cell">sara.lee@email.com</td>
+                  <td class="table-cell">Profile Updated</td>
+                  <td class="table-cell">2026-03-09</td>
+                  <td class="table-cell">
+                    <span class="badge-info">Reviewed</span>
+                  </td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-cell">alex.chen@email.com</td>
+                  <td class="table-cell">Withdrawal Request</td>
+                  <td class="table-cell">2026-03-08</td>
+                  <td class="table-cell">
+                    <span class="badge-warning">Processing</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
