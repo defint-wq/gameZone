@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Mythic Glory Account",
+    "rank": "Mythic Glory",
+    "heroes": 85,
+    "skins": 120,
+    "winRate": 62,
+    "price": 299,
+    "badge": "Premium",
+    "badgeClass": "badge-success",
+    "region": "Global"
+  },
+  {
+    "id": 2,
+    "title": "Legend III Account",
+    "rank": "Legend III",
+    "heroes": 65,
+    "skins": 45,
+    "winRate": 58,
+    "price": 149,
+    "badge": "Featured",
+    "badgeClass": "badge-info",
+    "region": "Asia"
+  },
+  {
+    "id": 3,
+    "title": "Epic I Account",
+    "rank": "Epic I",
+    "heroes": 42,
+    "skins": 25,
+    "winRate": 55,
+    "price": 79,
+    "badge": "Hot Deal",
+    "badgeClass": "badge-warning",
+    "region": "Europe"
+  },
+  {
+    "id": 4,
+    "title": "Mythic Account",
+    "rank": "Mythic",
+    "heroes": 70,
+    "skins": 65,
+    "winRate": 60,
+    "price": 199,
+    "badge": "Premium",
+    "badgeClass": "badge-success",
+    "region": "Asia"
+  },
+  {
+    "id": 5,
+    "title": "Legend I Account",
+    "rank": "Legend I",
+    "heroes": 60,
+    "skins": 40,
+    "winRate": 57,
+    "price": 139,
+    "badge": "Featured",
+    "badgeClass": "badge-info",
+    "region": "Global"
+  }
+]
