@@ -1,27 +1,14 @@
-import { Account } from "./shopModel.js";
-import { fetchAccounts } from "./shopService.js";
-import {
-  filterAccounts,
-  getFilterFromUrl,
-  updateUrlParams,
-} from "./shopUrl.js";
+import { fetchFilteredAccounts } from "./shopService.js";
+import { getFilterFromUrl, updateUrlParams } from "./shopUrl.js";
 import { renderAccounts, renderFilterInfo } from "./shopView.js";
-
-let allAccounts = [];
 
 const shopPage = async () => {
   try {
-    if (allAccounts.length === 0) {
-      const data = await fetchAccounts("../data/accounts.json");
-      allAccounts = data.map((item) => new Account(item));
-    }
-
     const filters = getFilterFromUrl();
-
-    const filteredAccount = filterAccounts(allAccounts, filters);
+    const accounts = await fetchFilteredAccounts(filters);
 
     renderFilterInfo(filters);
-    renderAccounts(filteredAccount);
+    renderAccounts(accounts);
 
     setupSearch(filters);
   } catch (error) {
@@ -48,18 +35,13 @@ const setupSearch = (currentFilters) => {
       minPrice: minInput ? minInput.value : "",
       maxPrice: maxInput ? maxInput.value : "",
     };
-
     updateUrlParams(newFilters);
   };
 
   searchBtn?.addEventListener("click", handleSearch);
-
-  searchInput?.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-      handleSearch();
-    }
+  searchInput?.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") handleSearch();
   });
-
   [minInput, maxInput].forEach((input) => {
     input?.addEventListener("keydown", (e) => {
       if (e.key === "Enter") handleSearch();
