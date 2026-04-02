@@ -10,6 +10,7 @@ export const renderAccounts = (accounts) => {
   shopGrid.innerHTML = accounts
     .map(
       ({
+        id,
         badgeClass,
         badge,
         title,
@@ -19,6 +20,8 @@ export const renderAccounts = (accounts) => {
         winRate,
         region,
         price,
+        likes,
+        image,
       }) => `
     <div class="card-interactive">
       <div class="account-badge ${badgeClass}">${badge}</div>
@@ -34,12 +37,63 @@ export const renderAccounts = (accounts) => {
         <span class="price-label">Price:</span>
         <span class="price-value">$${price}</span>
       </div>
-      <button class="btn-primary full-width">View Details</button>
+      <button 
+        class="btn-primary full-width"
+        onclick="openModal('${title}', '${image}')"
+      >
+        View Details
+      </button>
+      <div class="col">
+        <button class="btn-secondary col" onclick="addLike(${id}, this)">Like</button> 
+        <div class="like" id="likes-${id}" data-liked="false">❤️ ${likes}</div>     
+      </div>
     </div>
   `,
     )
     .join("");
 };
+
+window.addLike = (id, btn) => {
+  const likeText = document.getElementById(`likes-${id}`);
+  if (!likeText) return;
+
+  let count = Number(likeText.textContent.replace("❤️ ", "")) || 0;
+  const liked = likeText.dataset.liked === "true";
+
+  if (liked) {
+    count--;
+    likeText.dataset.liked = "false";
+    btn.textContent = "Like";
+  } else {
+    count++;
+    likeText.dataset.liked = "true";
+    btn.textContent = "Liked";
+  }
+
+  likeText.textContent = `❤️ ${count}`;
+};
+
+window.openModal = (title, image) => {
+  const modal = document.getElementById("accountModal");
+  const modalBody = document.getElementById("modalBody");
+
+  if (!modal || !modalBody) return;
+
+  modalBody.innerHTML = `
+    <h2>${title}</h2>
+    <img src="${image}" style="width:100%; border-radius:10px;">
+  `;
+
+  modal.style.display = "block";
+};
+
+const closeBtn = document.getElementById("closeModal");
+
+if (closeBtn) {
+  closeBtn.addEventListener("click", () => {
+    document.getElementById("accountModal").style.display = "none"
+  })
+}
 
 export const renderFilterInfo = (filters) => {
   const filterInfo = document.getElementById("filterInfo");

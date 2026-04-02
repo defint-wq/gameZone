@@ -9,7 +9,9 @@
     "price": 299,
     "badge": "Premium",
     "badgeClass": "badge-success",
-    "region": "Global"
+    "region": "Global",
+    "likes": 0,
+    "image": "../data/images/gg.jpg"
   },
   {
     "id": 2,
@@ -21,7 +23,9 @@
     "price": 149,
     "badge": "Featured",
     "badgeClass": "badge-info",
-    "region": "Asia"
+    "region": "Asia",
+    "likes": 0,
+    "image": "../data/images/gg.jpg"
   },
   {
     "id": 3,
@@ -33,7 +37,9 @@
     "price": 79,
     "badge": "Hot Deal",
     "badgeClass": "badge-warning",
-    "region": "Europe"
+    "region": "Europe",
+    "likes": 0,
+    "image": "../data/images/gg.jpg"
   },
   {
     "id": 4,
@@ -45,7 +51,9 @@
     "price": 199,
     "badge": "Premium",
     "badgeClass": "badge-success",
-    "region": "Asia"
+    "region": "Asia",
+    "likes": 0,
+    "image": "../data/images/gg.jpg"
   },
   {
     "id": 5,
@@ -57,6 +65,8 @@
     "price": 139,
     "badge": "Featured",
     "badgeClass": "badge-info",
-    "region": "Global"
+    "region": "Global",
+    "likes": 0,
+    "image": "../data/images/gg.jpg"
   }
 ]

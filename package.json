@@ -1,0 +1,16 @@
+{
+  "name": "gamezone",
+  "version": "1.0.0",
+  "description": "**University:** Монгол Улсын Их Сургууль   **Department:** Мэдээлэл, Компьютерын Ухааны тэнхим   **Course:** Веб аппликейшн (ICSI301)   **Student:** Баттамир, Болортулга   **Instructor:** Г. Сарнай   **Date:** 2025.02.19",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
