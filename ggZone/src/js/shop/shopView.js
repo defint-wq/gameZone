@@ -23,7 +23,7 @@ export const renderAccounts = (accounts) => {
         likes,
         image,
       }) => `
-    <div class="card-interactive">
+    <div class="card-interactive" onclick="openModal('${title}', '${image}')">
       <div class="account-badge ${badgeClass}">${badge}</div>
       <h3>${title}</h3>
       <div class="account-details">
@@ -81,7 +81,7 @@ window.openModal = (title, image) => {
 
   modalBody.innerHTML = `
     <h2>${title}</h2>
-    <img src="${image}" style="width:100%; border-radius:10px;">
+    <img src="${image}" style="width:100%; border-radius:10px; ">
   `;
 
   modal.style.display = "block";
