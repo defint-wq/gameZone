@@ -1,99 +1,60 @@
+import { AccountCard } from "./components/AccountCard.js";
+
 export const renderAccounts = (accounts) => {
   const shopGrid = document.getElementById("shopGrid");
   if (!shopGrid) return;
 
-  if (!accounts.length) {
-    shopGrid.innerHTML = "<p>No accounts found.</p>";
-    return;
-  }
+  shopGrid.innerHTML = accounts.map(AccountCard).join("");
 
-  shopGrid.innerHTML = accounts
-    .map(
-      ({
-        id,
-        badgeClass,
-        badge,
-        title,
-        rank,
-        heroes,
-        skins,
-        winRate,
-        region,
-        price,
-        likes,
-        image,
-      }) => `
-    <div class="card-interactive" onclick="openModal('${title}', '${image}')">
-      <div class="account-badge ${badgeClass}">${badge}</div>
-      <h3>${title}</h3>
-      <div class="account-details">
-        <p><strong>Rank:</strong> ${rank}</p>
-        <p><strong>Heroes:</strong> ${heroes}/120</p>
-        <p><strong>Skins:</strong> ${skins} Premium</p>
-        <p><strong>Win Rate:</strong> ${winRate}%</p>
-        <p><strong>Region:</strong> ${region}</p>
-      </div>
-      <div class="account-price">
-        <span class="price-label">Price:</span>
-        <span class="price-value">$${price}</span>
-      </div>
-      <button 
-        class="btn-primary full-width"
-        onclick="openModal('${title}', '${image}')"
-      >
-        View Details
-      </button>
-      <div class="col">
-        <button class="btn-secondary col" onclick="addLike(${id}, this)">Like</button> 
-        <div class="like" id="likes-${id}" data-liked="false">❤️ ${likes}</div>     
-      </div>
-    </div>
-  `,
-    )
-    .join("");
+  // Like button listener
+  shopGrid.querySelectorAll(".btn-like").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const id = e.currentTarget.dataset.id;
+      const likeDiv = document.getElementById(`likes-${id}`);
+      if (!likeDiv) return;
+
+      let count = Number(likeDiv.textContent.replace("❤️ ", "")) || 0;
+      const liked = likeDiv.dataset.liked === "true";
+
+      if (liked) {
+        count--;
+        likeDiv.dataset.liked = "false";
+        e.currentTarget.textContent = "Like";
+      } else {
+        count++;
+        likeDiv.dataset.liked = "true";
+        e.currentTarget.textContent = "Liked";
+      }
+
+      likeDiv.textContent = `❤️ ${count}`;
+    });
+  });
+
+  // View Details (Modal) listener
+  shopGrid.querySelectorAll(".view-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const title = e.currentTarget.dataset.title;
+      const image = e.currentTarget.dataset.image;
+
+      const modal = document.getElementById("accountModal");
+      const modalBody = document.getElementById("modalBody");
+      if (!modal || !modalBody) return;
+
+      modalBody.innerHTML = `
+        <h2>${title}</h2>
+        <img src="${image}" style="width:100%; border-radius:10px;">
+      `;
+      modal.style.display = "block";
+
+      const closeBtn = document.getElementById("closeModal");
+      if (closeBtn) {
+        closeBtn.addEventListener("click", () => {
+          modal.style.display = "none";
+        });
+      }
+    });
+  });
 };
-
-window.addLike = (id, btn) => {
-  const likeText = document.getElementById(`likes-${id}`);
-  if (!likeText) return;
-
-  let count = Number(likeText.textContent.replace("❤️ ", "")) || 0;
-  const liked = likeText.dataset.liked === "true";
-
-  if (liked) {
-    count--;
-    likeText.dataset.liked = "false";
-    btn.textContent = "Like";
-  } else {
-    count++;
-    likeText.dataset.liked = "true";
-    btn.textContent = "Liked";
-  }
-
-  likeText.textContent = `❤️ ${count}`;
-};
-
-window.openModal = (title, image) => {
-  const modal = document.getElementById("accountModal");
-  const modalBody = document.getElementById("modalBody");
-
-  if (!modal || !modalBody) return;
-
-  modalBody.innerHTML = `
-    <h2>${title}</h2>
-    <img src="${image}" style="width:100%; border-radius:10px; ">
-  `;
-
-  modal.style.display = "block";
-};
-
-const closeBtn = document.getElementById("closeModal");
-
-if (closeBtn) {
-  closeBtn.addEventListener("click", () => {
-    document.getElementById("accountModal").style.display = "none"
-  })
-}
 
 export const renderFilterInfo = (filters) => {
   const filterInfo = document.getElementById("filterInfo");
